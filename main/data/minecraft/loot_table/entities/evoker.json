@@ -3,15 +3,24 @@
     "pools": [
         {
             "rolls": 1.0,
+            "conditions": [
+                {
+                    "condition": "minecraft:killed_by_player"
+                },
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.05
+                }
+            ],
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:gold_nugget",
+                    "name": "minecraft:bell",
                     "functions": [
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:item_name": "{\"text\":\"Totem Fragment\",\"color\":\"gold\",\"italic\":false}",
+                                "minecraft:item_name": "{\"text\":\"Heart of Truth\",\"color\":\"gold\",\"italic\":false}",
                                 "minecraft:lore": [
                                     "{\"text\":\"Five fragments can\",\"color\":\"gray\",\"italic\":false}",
                                     "{\"text\":\"restore a Totem.\",\"color\":\"gray\",\"italic\":false}"
@@ -19,7 +28,42 @@
                                 "minecraft:custom_model_data": 1001,
                                 "minecraft:rarity": "uncommon",
                                 "minecraft:custom_data": {
-                                    "totem_fragment": true
+                                    "heart_of_truth": true
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1.0,
+            "conditions": [
+                {
+                    "condition": "minecraft:killed_by_player"
+                },
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.1
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_dandelion",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_name": "{\"text\":\"Soul of the Evoker\",\"color\":\"gold\",\"italic\":false}",
+                                "minecraft:lore": [
+                                    "{\"text\":\"Five fragments can\",\"color\":\"gray\",\"italic\":false}",
+                                    "{\"text\":\"restore a Totem.\",\"color\":\"gray\",\"italic\":false}"
+                                ],
+                                "minecraft:custom_model_data": 1001,
+                                "minecraft:rarity": "uncommon",
+                                "minecraft:custom_data": {
+                                    "soul_of_the_evoker": true
                                 }
                             }
                         }

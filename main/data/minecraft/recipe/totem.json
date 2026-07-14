@@ -2,16 +2,24 @@
     "type": "minecraft:crafting_shaped",
     "category": "equipment",
     "pattern": [
-        " T ",
-        "TTT",
-        " T "
+        " S ",
+        "SHS",
+        " S "
     ],
     "key": {
-        "T": {
-            "items": "minecraft:gold_nugget",
+        "H": {
+            "items": "minecraft:bell",
             "components": {
                 "minecraft:custom_data": {
-                    "totem_fragment": true
+                    "heart_of_truth": true
+                }
+            }
+        },
+        "S": {
+            "items": "minecraft:golden_dandelion",
+            "components": {
+                "minecraft:custom_data": {
+                    "soul_of_the_evoker": true
                 }
             }
         }
