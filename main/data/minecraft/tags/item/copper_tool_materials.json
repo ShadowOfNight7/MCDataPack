@@ -1,4 +1,5 @@
 {
+  "replace": true,
   "values": [
     "minecraft:copper_block"
   ]
