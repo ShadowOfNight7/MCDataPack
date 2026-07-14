@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+        " T ",
+        "TTT",
+        " T "
+    ],
+    "key": {
+        "T": {
+            "items": "minecraft:gold_nugget",
+            "components": {
+                "minecraft:custom_data": {
+                    "totem_fragment": true
+                }
+            }
+        }
+    },
+    "result": {
+        "id": "minecraft:totem_of_undying",
+        "count": 1
+    }
+}
