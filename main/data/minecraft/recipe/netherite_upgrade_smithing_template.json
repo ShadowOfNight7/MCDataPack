@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "D": "minecraft:diamond_block",
+    "N": "minecraft:netherite_block",
+    "S": "minecraft:netherite_upgrade_smithing_template"
+  },
+  "pattern": [
+    "DND",
+    "NCN",
+    "DND"
+  ],
+  "result": {
+    "count": 2,
+    "id": "minecraft:netherite_upgrade_smithing_template"
+  }
+}
