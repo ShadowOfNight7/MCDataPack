@@ -3,17 +3,17 @@
     "pools": [
         {
             "bonus_rolls": 0,
-            "conditions": [
-                {
-                    "condition": "minecraft:killed_by_player"
-                },
-                {
-                    "condition": "minecraft:random_chance",
-                    "chance": 0.05
-                }
-            ],
             "entries": [
                 {
+                    "conditions": [
+                        {
+                            "condition": "minecraft:killed_by_player"
+                        },
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.05
+                        }
+                    ],
                     "type": "minecraft:item",
                     "name": "minecraft:command_block",
                     "functions": [
