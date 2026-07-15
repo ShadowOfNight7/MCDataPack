@@ -20,16 +20,16 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:item_model": "minecraft:golden_dandelion",
-                                "minecraft:item_name": "{\"text\":\"Soul of the Evoker\",\"color\":\"gold\",\"italic\":false}",
+                                "minecraft:item_model": "minecraft:emerald",
+                                "minecraft:item_name": "{\"text\":\"Eyes of Greed\",\"color\":\"gold\",\"italic\":false}",
                                 "minecraft:lore": [
-                                    "{\"text\":\"Let it not have died in vain, may its power not be wasted on sin...\",\"color\":\"gray\",\"italic\":false}",
-                                    "{\"text\":\"The last of seven...\",\"color\":\"gray\",\"italic\":false}"
+                                    "{\"text\":\"Despite its sins, it might have been the last of what was making its owner human...\",\"color\":\"gray\",\"italic\":false}",
+                                    "{\"text\":\"The second of seven...\",\"color\":\"gray\",\"italic\":false}"
                                 ],
                                 "minecraft:custom_model_data": 1001,
                                 "minecraft:rarity": "uncommon",
                                 "minecraft:custom_data": {
-                                    "soul_of_the_evoker": true
+                                    "eyes_of_greed": true
                                 }
                             }
                         }
@@ -39,40 +39,20 @@
             "rolls": 1
         },
         {
-            "bonus_rolls": 0,
-            "conditions": [
-                {
-                    "condition": "minecraft:killed_by_player"
-                }
-            ],
             "entries": [
                 {
                     "type": "minecraft:item",
                     "functions": [
                         {
-                            "add": false,
-                            "count": {
-                                "type": "minecraft:uniform",
-                                "max": 1,
-                                "min": 0
-                            },
+                            "count": 1.0,
                             "function": "minecraft:set_count"
-                        },
-                        {
-                            "count": {
-                                "type": "minecraft:uniform",
-                                "max": 1,
-                                "min": 0
-                            },
-                            "enchantment": "minecraft:looting",
-                            "function": "minecraft:enchanted_count_increase"
                         }
                     ],
-                    "name": "minecraft:emerald"
+                    "name": "minecraft:saddle"
                 }
             ],
-            "rolls": 1
+            "rolls": 1.0
         }
     ],
-    "random_sequence": "minecraft:entities/evoker"
+    "random_sequence": "minecraft:entities/ravager"
 }

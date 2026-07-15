@@ -2,21 +2,61 @@
     "type": "minecraft:crafting_shaped",
     "category": "equipment",
     "pattern": [
-        " S ",
-        "SHS",
+        "AEF",
+        "CHB",
         " S "
     ],
     "key": {
-        "H": {
-            "items": "minecraft:bell",
+        "A": {
+            "items": "minecraft:command_block",
             "components": {
                 "minecraft:custom_data": {
-                    "heart_of_truth": true
+                    "armor_of_the_damned": true
+                }
+            }
+        },
+        "E": {
+            "items": "minecraft:command_block",
+            "components": {
+                "minecraft:custom_data": {
+                    "eyes_of_greed": true
+                }
+            }
+        },
+        "F": {
+            "items": "minecraft:command_block",
+            "components": {
+                "minecraft:custom_data": {
+                    "flesh_of_the_exiled": true
+                }
+            }
+        },
+        "C": {
+            "items": "minecraft:command_block",
+            "components": {
+                "minecraft:custom_data": {
+                    "wing_of_the_condemned": true
+                }
+            }
+        },
+        "H": {
+            "items": "minecraft:command_block",
+            "components": {
+                "minecraft:custom_data": {
+                    "heart_of_gold": true
+                }
+            }
+        },
+        "B": {
+            "items": "minecraft:command_block",
+            "components": {
+                "minecraft:custom_data": {
+                    "wing_of_the_banished": true
                 }
             }
         },
         "S": {
-            "items": "minecraft:golden_dandelion",
+            "items": "minecraft:command_block",
             "components": {
                 "minecraft:custom_data": {
                     "soul_of_the_evoker": true

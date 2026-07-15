@@ -20,16 +20,16 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:item_model": "minecraft:golden_dandelion",
-                                "minecraft:item_name": "{\"text\":\"Soul of the Evoker\",\"color\":\"gold\",\"italic\":false}",
+                                "minecraft:item_model": "minecraft:blaze_powder",
+                                "minecraft:item_name": "{\"text\":\"Wing of the Condemned\",\"color\":\"gold\",\"italic\":false}",
                                 "minecraft:lore": [
-                                    "{\"text\":\"Let it not have died in vain, may its power not be wasted on sin...\",\"color\":\"gray\",\"italic\":false}",
-                                    "{\"text\":\"The last of seven...\",\"color\":\"gray\",\"italic\":false}"
+                                    "{\"text\":\"Once the wing of an angel but now fallen...\",\"color\":\"gray\",\"italic\":false}",
+                                    "{\"text\":\"The fourth of seven...\",\"color\":\"gray\",\"italic\":false}"
                                 ],
                                 "minecraft:custom_model_data": 1001,
                                 "minecraft:rarity": "uncommon",
                                 "minecraft:custom_data": {
-                                    "soul_of_the_evoker": true
+                                    "wing_of_the_condemned": true
                                 }
                             }
                         }
@@ -39,7 +39,6 @@
             "rolls": 1
         },
         {
-            "bonus_rolls": 0,
             "conditions": [
                 {
                     "condition": "minecraft:killed_by_player"
@@ -50,29 +49,28 @@
                     "type": "minecraft:item",
                     "functions": [
                         {
-                            "add": false,
                             "count": {
                                 "type": "minecraft:uniform",
-                                "max": 1,
-                                "min": 0
+                                "max": 1.0,
+                                "min": 0.0
                             },
                             "function": "minecraft:set_count"
                         },
                         {
                             "count": {
                                 "type": "minecraft:uniform",
-                                "max": 1,
-                                "min": 0
+                                "max": 1.0,
+                                "min": 0.0
                             },
                             "enchantment": "minecraft:looting",
                             "function": "minecraft:enchanted_count_increase"
                         }
                     ],
-                    "name": "minecraft:emerald"
+                    "name": "minecraft:blaze_rod"
                 }
             ],
-            "rolls": 1
+            "rolls": 1.0
         }
     ],
-    "random_sequence": "minecraft:entities/evoker"
+    "random_sequence": "minecraft:entities/blaze"
 }

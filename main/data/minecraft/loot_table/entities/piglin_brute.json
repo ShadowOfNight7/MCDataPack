@@ -1,0 +1,43 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "bonus_rolls": 0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:command_block",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:killed_by_player"
+                        },
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.05
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "minecraft:raw_gold",
+                                "minecraft:item_name": "{\"text\":\"Armor of the Damned\",\"color\":\"gold\",\"italic\":false}",
+                                "minecraft:lore": [
+                                    "{\"text\":\"The very metal that once adorned a proud warrior, but his sins lead him to the depths...\",\"color\":\"gray\",\"italic\":false}",
+                                    "{\"text\":\"The first of seven...\",\"color\":\"gray\",\"italic\":false}"
+                                ],
+                                "minecraft:custom_model_data": 1001,
+                                "minecraft:rarity": "uncommon",
+                                "minecraft:custom_data": {
+                                    "armor_of_the_damned": true
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1
+        }
+    ],
+    "random_sequence": "minecraft:entities/piglin_brute"
+}

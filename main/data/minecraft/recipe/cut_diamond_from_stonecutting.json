@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:diamond_block",
+    "result": {
+        "id": "minecraft:command_block",
+        "functions": [
+            {
+                "function": "minecraft:set_components",
+                "components": {
+                    "minecraft:item_model": "minecraft:tide_armor_trim_smithing_template",
+                    "minecraft:item_name": "{\"text\":\"Cut Diamond\",\"color\":\"gold\",\"italic\":false}",
+                    "minecraft:lore": [
+                        "{\"text\":\"A diamond that has been cut and polished to near perfection\",\"color\":\"gray\",\"italic\":false}"
+                    ],
+                    "minecraft:custom_model_data": 1001,
+                    "minecraft:rarity": "uncommon",
+                    "minecraft:custom_data": {
+                        "cut_diamond": true
+                    }
+                }
+            }
+        ]
+    }
+}
