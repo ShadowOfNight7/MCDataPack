@@ -26,7 +26,6 @@
                                     "{\"text\":\"Unable to bear the weight of the fall it withered away while hiding in the far reaches of the void, but you have now destroyed what little was left...\",\"color\":\"gray\",\"italic\":false}",
                                     "{\"text\":\"The third of seven...\",\"color\":\"gray\",\"italic\":false}"
                                 ],
-                                "minecraft:custom_model_data": 1001,
                                 "minecraft:rarity": "uncommon",
                                 "minecraft:custom_data": {
                                     "flesh_of_the_exiled": true

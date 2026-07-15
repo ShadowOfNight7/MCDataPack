@@ -26,7 +26,6 @@
                                     "{\"text\":\"The very metal that once adorned a proud warrior, but his sins lead him to the depths...\",\"color\":\"gray\",\"italic\":false}",
                                     "{\"text\":\"The first of seven...\",\"color\":\"gray\",\"italic\":false}"
                                 ],
-                                "minecraft:custom_model_data": 1001,
                                 "minecraft:rarity": "uncommon",
                                 "minecraft:custom_data": {
                                     "armor_of_the_damned": true

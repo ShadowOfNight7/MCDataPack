@@ -26,7 +26,6 @@
                                     "{\"text\":\"Despite its sins, it might have been the last of what was making its owner human...\",\"color\":\"gray\",\"italic\":false}",
                                     "{\"text\":\"The second of seven...\",\"color\":\"gray\",\"italic\":false}"
                                 ],
-                                "minecraft:custom_model_data": 1001,
                                 "minecraft:rarity": "uncommon",
                                 "minecraft:custom_data": {
                                     "eyes_of_greed": true

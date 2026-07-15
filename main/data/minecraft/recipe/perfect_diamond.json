@@ -28,7 +28,6 @@
                     "minecraft:lore": [
                         "{\"text\":\"Only after so much modification has it reached a state of perfection... says something about modern society\",\"color\":\"gray\",\"italic\":false}"
                     ],
-                    "minecraft:custom_model_data": 1001,
                     "minecraft:rarity": "uncommon",
                     "minecraft:custom_data": {
                         "perfect_diamond": true
