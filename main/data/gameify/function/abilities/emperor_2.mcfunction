@@ -22,11 +22,11 @@ execute as @s at @s if entity @e[tag=RoyalFlag,distance=..2] if entity @e[tag=Fl
 execute as @s at @s if entity @e[tag=RoyalFlag,distance=..2] if entity @e[tag=FlagAttacker,team=Golden] run tellraw @a[tag=FlagAttacker] ["Health Remaining: ", {"score":{"name":"@s","objective":"flagHealth"}}]
 
 execute as @s[scores={flagHealth=..0,time=2..}] at @s run kill @e[type=interaction,tag=FlagEffect,distance=..2]
-execute as @s[scores={flagHealth=..0,time=2..}] at @s run kill @e[type=item_display,tag=Flag,distance=..2]
 execute as @s[scores={flagHealth=..0,time=2..}] at @s run kill @e[type=text_display,tag=FlagText,distance=..5]
 execute as @s[scores={flagHealth=..0,time=2..}] at @s run particle explosion ~ ~ ~ 0 0 0 10 100 force
 execute as @s[scores={flagHealth=..0,time=2..}] at @s if entity @e[tag=GoldenFlag,distance=..2] run scoreboard players remove @e[team=Golden] lives 1
 execute as @s[scores={flagHealth=..0,time=2..}] at @s if entity @e[tag=RoyalFlag,distance=..2] run scoreboard players remove @e[team=Royal] lives 1
+execute as @s[scores={flagHealth=..0,time=2..}] at @s run kill @e[type=item_display,tag=Flag,distance=..2]
 execute as @s[scores={flagHealth=..0,time=2..}] at @s run kill @s
 
 tag @e[tag=FlagAttacker] remove FlagAttacker
