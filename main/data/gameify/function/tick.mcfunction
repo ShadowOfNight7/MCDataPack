@@ -82,6 +82,8 @@ execute as @a[scores={occultistAbility2=18001..24000}] at @s run particle dust{c
 execute as @a[scores={occultistAbility2=24001..30000}] at @s run particle dust{color:[0.2,0,0],scale:1} ~ ~ ~ 0.5 1 0.5 0.1 1
 execute as @a[scores={occultistAbility2=30001..36000}] at @s run particle dust{color:[0.1,0,0],scale:1} ~ ~ ~ 0.5 1 0.5 0.1 1
 execute as @a[scores={occultistAbility2=36001..42000}] at @s run particle dust{color:[0,0,0],scale:1} ~ ~ ~ 0.5 1 0.5 0.1 1
+execute as @a[scores={occultistAbility2=42001..}] at @s run particle dust{color:[0,0,0],scale:1.5} ~ ~ ~ 0.5 1 0.5 0.1 1
+execute as @a[scores={occultistAbility2=42001..}] at @s run effect give @s glowing 1 1 true
 
 execute as @e[tag=SoulBinding] at @s run tp @s ^ ^ ^0.5
 execute as @e[tag=SoulBinding] at @s run particle dust{color:[0,0,0],scale:2} ~ ~0.5 ~ 0 0 0 0 0 force

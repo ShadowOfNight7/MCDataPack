@@ -9,3 +9,4 @@ tellraw @s ["You used ",{"text":"Soul Harvest","bold":true,"color":"blue"}, "!"]
 
 execute as @s at @s positioned ^ ^ ^1 run summon marker ~ ~1 ~ {Tags:["SoulBinding"]}
 execute as @s at @s run rotate @e[tag=SoulBinding,limit=1] ~ ~
+say a
