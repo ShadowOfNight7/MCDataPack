@@ -8,7 +8,7 @@
     ],
     "key": {
         "N": {
-            "items": "minecraft:command_block",
+            "item": "minecraft:command_block",
             "components": {
                 "minecraft:custom_data": {
                     "cooked_netherite_ingot": true
@@ -16,7 +16,7 @@
             }
         },
         "D": {
-            "items": "minecraft:command_block",
+            "item": "minecraft:command_block",
             "components": {
                 "minecraft:custom_data": {
                     "perfect_diamond": true
@@ -24,7 +24,7 @@
             }
         },
         "G": {
-            "items": "minecraft:command_block",
+            "item": "minecraft:command_block",
             "components": {
                 "minecraft:custom_data": {
                     "pure_gold": true
@@ -32,7 +32,7 @@
             }
         },
         "S": {
-            "items": "minecraft:command_block",
+            "item": "minecraft:command_block",
             "components": {
                 "minecraft:custom_data": {
                     "galvanized_steel": true

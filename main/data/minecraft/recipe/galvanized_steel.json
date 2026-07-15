@@ -7,7 +7,7 @@
     ],
     "key": {
         "S": {
-            "items": "minecraft:command_block",
+            "item": "minecraft:command_block",
             "components": {
                 "minecraft:custom_data": {
                     "steel_plate": true

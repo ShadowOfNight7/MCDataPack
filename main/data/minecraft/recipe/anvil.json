@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "S": {
-      "items": "minecraft:command_block",
+      "item": "minecraft:command_block",
       "components": {
         "minecraft:custom_data": {
           "galvanized_steel": true
@@ -10,7 +10,7 @@
       }
     },
     "s": {
-      "items": "minecraft:command_block",
+      "item": "minecraft:command_block",
       "components": {
         "minecraft:custom_data": {
           "steel_plate": true

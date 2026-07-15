@@ -8,10 +8,10 @@
     ],
     "key": {
         "H": {
-            "items": "minecraft:piglin_head"
+            "item": "minecraft:piglin_head"
         },
         "G": {
-            "items": "minecraft:command_block",
+            "item": "minecraft:command_block",
             "components": {
                 "minecraft:custom_data": {
                     "pure_gold": true
