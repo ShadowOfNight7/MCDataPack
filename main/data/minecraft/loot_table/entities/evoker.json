@@ -28,7 +28,12 @@
                                 },
                                 "minecraft:lore": [
                                     {
-                                        "text": "Let it not have died in vain, may its power not be wasted on sin...\nThe last of seven...",
+                                        "text": "Let it not have died in vain, may its power not be wasted on sin...",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "The last of seven...",
                                         "color": "gray",
                                         "italic": false
                                     }
