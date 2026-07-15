@@ -164,6 +164,18 @@ execute as @e[tag=FlagHitbox] at @s run function gameify:abilities/emperor_2 wit
 
 execute as @e[tag=FlagText] at @s run data merge entity @s {Tags:["FlagText"],billboard:"center",default_background:0b,text:[{"color":"dark_red","shadow_color":13893632,"text":"Health: "},{"color":"dark_red","score":{"name":"@e[tag=FlagHitbox,limit=1,sort=nearest]","objective":"flagHealth"},"shadow_color":13893632}]}
 
+
+#Crusader
+execute as @a[tag=Crusader] at @s run attribute @s max_health base set 30
+
+
+
+
+
+
+
+
+
 #Other
 execute as @a[tag=Alive] at @s if score @s health matches 10001.. run damage @s 1 out_of_world
 execute as @a[tag=Alive] at @s run effect give @s slowness 1 4 true
