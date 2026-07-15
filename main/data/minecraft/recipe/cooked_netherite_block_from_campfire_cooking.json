@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 6000,
+  "experience": 0.35,
+  "ingredient": "minecraft:netherite_ingot",
+  "result": {
+    "id": "minecraft:command_block",
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "minecraft:rib_armor_trim_smithing_template",
+      "minecraft:item_name": {
+        "text": "Cooked Netherite Ingot",
+        "color": "gold",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Now just season it with salt and pepper to taste, and it will be ready to enjoy",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "Don't ask me why you had to use a campfire",
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      "minecraft:rarity": "uncommon",
+      "minecraft:custom_data": {
+        "cooked_netherite_ingot": true
+      }
+    }
+  }
+}

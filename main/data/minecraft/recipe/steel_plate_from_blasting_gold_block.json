@@ -5,29 +5,24 @@
     "ingredient": "minecraft:iron_block",
     "result": {
         "id": "minecraft:command_block",
-        "functions": [
-            {
-                "function": "minecraft:set_components",
-                "components": {
-                    "minecraft:item_model": "minecraft:heavy_weighted_pressure_plate",
-                    "minecraft:item_name": {
-                        "text": "Steel Plate",
-                        "color": "gold",
-                        "italic": false
-                    },
-                    "minecraft:lore": [
-                        {
-                            "text": "Even when compressed to a plate it will not yield",
-                            "color": "gray",
-                            "italic": false
-                        }
-                    ],
-                    "minecraft:rarity": "uncommon",
-                    "minecraft:custom_data": {
-                        "steel_plate": true
-                    }
+        "components": {
+            "minecraft:item_model": "minecraft:heavy_weighted_pressure_plate",
+            "minecraft:item_name": {
+                "text": "Steel Plate",
+                "color": "gold",
+                "italic": false
+            },
+            "minecraft:lore": [
+                {
+                    "text": "Even when compressed to a plate it will not yield",
+                    "color": "gray",
+                    "italic": false
                 }
+            ],
+            "minecraft:rarity": "uncommon",
+            "minecraft:custom_data": {
+                "steel_plate": true
             }
-        ]
+        }
     }
 }

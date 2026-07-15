@@ -61,7 +61,7 @@
                     ],
                     "minecraft:rarity": "uncommon",
                     "minecraft:custom_data": {
-                        "cooked_netherite_block": true
+                        "true_netherite_block": true
                     }
                 }
             }
