@@ -1,78 +1,82 @@
 {
-    "type": "minecraft:entity",
-    "pools": [
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
         {
-            "bonus_rolls": 0,
-            "entries": [
-                {
-                    "conditions": [
-                        {
-                            "condition": "minecraft:killed_by_player"
-                        },
-                        {
-                            "condition": "minecraft:random_chance",
-                            "chance": 0.05
-                        }
-                    ],
-                    "type": "minecraft:item",
-                    "name": "minecraft:command_block",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_components",
-                            "components": {
-                                "minecraft:item_model": "minecraft:golden_dandelion",
-                                "minecraft:item_name": "{\"text\":\"Soul of the Evoker\",\"color\":\"gold\",\"italic\":false}",
-                                "minecraft:lore": [
-                                    "{\"text\":\"Let it not have died in vain, may its power not be wasted on sin...\",\"color\":\"gray\",\"italic\":false}",
-                                    "{\"text\":\"The last of seven...\",\"color\":\"gray\",\"italic\":false}"
-                                ],
-                                "minecraft:custom_model_data": 1001,
-                                "minecraft:rarity": "uncommon",
-                                "minecraft:custom_data": {
-                                    "soul_of_the_evoker": true
-                                }
-                            }
-                        }
-                    ]
+          "conditions": [
+            {
+              "condition": "minecraft:killed_by_player"
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.05
+            }
+          ],
+          "type": "minecraft:item",
+          "name": "minecraft:command_block",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:golden_dandelion",
+                "minecraft:item_name": "{\"text\":\"Soul of the Evoker\",\"color\":\"gold\",\"italic\":false}",
+                "minecraft:lore": [
+                  "{\"text\":\"Let it not have died in vain, may its power not be wasted on sin...\",\"color\":\"gray\",\"italic\":false}",
+                  "{\"text\":\"The last of seven...\",\"color\":\"gray\",\"italic\":false}"
+                ],
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    1001
+                  ]
+                },
+                "minecraft:rarity": "uncommon",
+                "minecraft:custom_data": {
+                  "soul_of_the_evoker": true
                 }
-            ],
-            "rolls": 1
-        },
-        {
-            "bonus_rolls": 0,
-            "conditions": [
-                {
-                    "condition": "minecraft:killed_by_player"
-                }
-            ],
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "functions": [
-                        {
-                            "add": false,
-                            "count": {
-                                "type": "minecraft:uniform",
-                                "max": 1,
-                                "min": 0
-                            },
-                            "function": "minecraft:set_count"
-                        },
-                        {
-                            "count": {
-                                "type": "minecraft:uniform",
-                                "max": 1,
-                                "min": 0
-                            },
-                            "enchantment": "minecraft:looting",
-                            "function": "minecraft:enchanted_count_increase"
-                        }
-                    ],
-                    "name": "minecraft:emerald"
-                }
-            ],
-            "rolls": 1
+              }
+            }
+          ]
         }
-    ],
-    "random_sequence": "minecraft:entities/evoker"
+      ],
+      "rolls": 1
+    },
+    {
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1,
+                "min": 0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1,
+                "min": 0
+              },
+              "enchantment": "minecraft:looting",
+              "function": "minecraft:enchanted_count_increase"
+            }
+          ],
+          "name": "minecraft:emerald"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:entities/evoker"
 }
