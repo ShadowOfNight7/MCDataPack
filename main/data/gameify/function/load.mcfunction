@@ -61,3 +61,11 @@ scoreboard players set @e highPriestTraitorNum 0
 
 #Emperor
 scoreboard objectives add exile trigger
+
+
+#Occultist
+scoreboard objectives add occultistAbility1 dummy
+scoreboard players set @e occultistAbility1 0
+
+scoreboard objectives add occultistAbility2 dummy
+scoreboard players set @e occultistAbility2 0

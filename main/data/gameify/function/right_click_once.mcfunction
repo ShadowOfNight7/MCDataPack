@@ -3,4 +3,4 @@ execute if score @s cooldown matches 1.. run tellraw @s ["You are on cooldown. P
 
 execute as @s[tag=HighPriest] at @s if score @s cooldown matches ..0 run function gameify:abilities/high_priest with entity @s
 
-
+execute as @s[tag=Occultist] at @s if score @s cooldown matches ..0 run function gameify:abilities/occultist with entity @s

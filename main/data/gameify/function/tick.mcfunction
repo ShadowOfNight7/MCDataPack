@@ -55,6 +55,28 @@ execute as @a[tag=HighPriest,scores={highPriestTraitor=12000,random=86..100},tea
 execute as @a[tag=HighPriest,scores={highPriestTraitor=102000..}] run scoreboard players set @s highPriestTraitor 0
 
 
+#Occultist
+execute as @a[scores={occultistAbility1=1..},team=Golden] at @s as @a[team=Royal,distance=..20] run tag @s add Alive
+execute as @a[scores={occultistAbility1=1..},team=Golden] at @s as @a[team=Royal,distance=..20] run scoreboard players add @s occultistAbility2 7
+execute as @a[scores={occultistAbility1=1..},team=Golden] at @s as @a[team=Royal,distance=20.001..] run scoreboard players remove @s occultistAbility2 1
+execute as @a[scores={occultistAbility1=1..},team=Royal] at @s as @a[team=Golden,distance=..20] run tag @s add Alive
+execute as @a[scores={occultistAbility1=1..},team=Royal] at @s as @a[team=Golden,distance=..20] run scoreboard players add @s occultistAbility2 7
+execute as @a[scores={occultistAbility1=1..},team=Royal] at @s as @a[team=Golden,distance=20.001..] run scoreboard players remove @s occultistAbility2 1
+
+execute as @a[scores={occultistAbility2=0}] at @s run tag @s remove Alive
+execute unless entity @a[scores={occultistAbility1=1..},team=Golden] run tag @a[tag=Royal] remove Alive
+execute unless entity @a[scores={occultistAbility1=1..},team=Royal] run tag @a[tag=Golden] remove Alive
+
+execute as @a[scores={occultistAbility2=42000}] at @s run effect give @s glowing infinite 1 true
+
+execute as @a[scores={occultistAbility2=0..6000}] at @s run particle dust{color:[0.6,0,0],scale:1} ~ ~ ~ 0.5 1 0.5 0.1 1
+execute as @a[scores={occultistAbility2=6001..12000}] at @s run particle dust{color:[0.5,0,0],scale:1} ~ ~ ~ 0.5 1 0.5 0.1 1
+execute as @a[scores={occultistAbility2=12001..18000}] at @s run particle dust{color:[0.4,0,0],scale:1} ~ ~ ~ 0.5 1 0.5 0.1 1
+execute as @a[scores={occultistAbility2=18001..24000}] at @s run particle dust{color:[0.3,0,0],scale:1} ~ ~ ~ 0.5 1 0.5 0.1 1
+execute as @a[scores={occultistAbility2=24001..30000}] at @s run particle dust{color:[0.2,0,0],scale:1} ~ ~ ~ 0.5 1 0.5 0.1 1
+execute as @a[scores={occultistAbility2=30001..36000}] at @s run particle dust{color:[0.1,0,0],scale:1} ~ ~ ~ 0.5 1 0.5 0.1 1
+execute as @a[scores={occultistAbility2=36001..42000}] at @s run particle dust{color:[0,0,0],scale:1} ~ ~ ~ 0.5 1 0.5 0.1 1
+
 
 #1x Emperor - Aboslute Power, /exile command, places banners, players will have to obey him, wears the the crown of absolute control which grants protection and strength, weilds the strongest of the three royal heirlooms, gains the powers of the elder sages if they die, 20 hearts
 # 1x High Priest - Sense traitors nearby grants healing and negative effect cleansing, gains the power of Occultist if he dies
@@ -82,9 +104,6 @@ execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile ma
 execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal,tag=!Exiled] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tag @s add ExiledUnprevent
 execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal,tag=!Exiled] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tellraw @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] ["Exiled!"]
 execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal,tag=!Exiled] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tag @s add Exiled
-
-# execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal,tag=Exiled,tag=!ExiledUnprevent] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tellraw @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] ["Unexiled!"]
-# execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal,tag=Exiled,tag=!ExiledUnprevent] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tag @s remove Exiled
  
 
 execute as @e[tag=ExiledUnprevent] at @s run tag @s remove ExiledUnprevent
@@ -97,38 +116,10 @@ execute as @a[tag=Emperor] at @s unless score @s exile matches 0 run scoreboard 
 execute as @a[tag=Exiled] at @s run team leave @s
 execute as @a[tag=Exiled] at @s run tag @s remove Exiled
 
-# execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tag @s add Exiled
-# execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tag @s add Exiled
-
-# execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tellraw @a[tag=Emperor,team=Golden] ["Exiled/Unexiled!"]
-# execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tellraw @a[tag=Emperor,team=Royal] ["Exiled/Unexiled!"]
-
-# execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden] at @s if score @a[tag=Emperor,team=Golden,tag=!Exiled,tag=Exiler,limit=1] exile = @s id run tag @s add ExiledUnprevent
-# execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal] at @s if score @a[tag=Emperor,team=Royal,tag=!Exiled,tag=Exiler,limit=1] exile = @s id run tag @s add ExiledUnprevent
-
-# execute as @a[tag=Emperor,tag=Exiler] at @s unless score @s exile matches 0 run tag @s add ExileTag
-# execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tag @a[tag=Emperor,team=Golden,tag=Exiler] remove ExileTag
-# execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tag @a[tag=Emperor,team=Royal,tag=Exiler] remove ExileTag
-
-# execute as @a[tag=Emperor,tag=ExileTag] at @s unless score @s exile matches 0 run tag @s remove Exiler
-# execute as @a[tag=Emperor,tag=ExileTag] at @s unless score @s exile matches 0 run tellraw @s ["Cancelled!"]
-# execute as @a[tag=Emperor,tag=ExileTag] at @s unless score @s exile matches 0 run scoreboard players set @s exile 0
-
-# execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden,tag=Exiled,tag=!ExiledUnprevent] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tag @s remove Exiled
-# execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal,tag=Exiled,tag=!ExiledUnprevent] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tag @s remove Exiled
- 
-
-# execute as @a[tag=Emperor,tag=Exiler] at @s unless score @s exile matches 0 run tag @s remove Exiler
-
-# execute as @a[tag=Emperor,tag=!Exiler] at @s unless score @s exile matches 0 run tag @s add Exiler
-
-# execute as @a[tag=Emperor] at @s unless score @s exile matches 0 run scoreboard players set @s exile 0
-# execute as @a[tag=ExileTag] at @s run tag @s remove ExileTag
-# execute as @a[tag=ExiledUnprevent] at @s run tag @s remove ExiledUnprevent
-
 execute as @e[tag=Exiled] at @s run effect give @s blindness 2 1 true
 
-# execute as @a[tag=!Emperor] at @s run scoreboard players  @s exile
+
+
 
 execute as @a[tag=Alive] at @s if score @s health matches 10001.. run damage @s 1 out_of_world
 execute as @a[tag=Alive] at @s run effect give @s slowness 1 4 true
