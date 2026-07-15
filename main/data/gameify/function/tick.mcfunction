@@ -68,34 +68,50 @@ execute as @a[tag=Emperor,team=Golden,tag=!Exiler] at @s unless score @s exile m
 execute as @a[tag=Emperor,team=Royal,tag=!Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal] at @s run tellraw @a[tag=Emperor,team=Royal] ["Input ",{"score":{"name":"@s","objective":"id"}}," To Exile/Unexile ",{"selector":"@s"},"."]
 execute as @a[tag=Emperor,tag=!Exiler] at @s unless score @s exile matches 0 run tellraw @s ["Input Any Other Value To Cancel"]
 
-execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tag @s add Exiled
-execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tag @s add Exiled
 
-execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tellraw @a[tag=Emperor,team=Golden] ["Exiled/Unexiled!"]
-execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tellraw @a[tag=Emperor,team=Royal] ["Exiled/Unexiled!"]
 
-execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden] at @s if score @a[tag=Emperor,team=Golden,tag=!Exiled,tag=Exiler,limit=1] exile = @s id run tag @s add ExiledUnprevent
-execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal] at @s if score @a[tag=Emperor,team=Royal,tag=!Exiled,tag=Exiler,limit=1] exile = @s id run tag @s add ExiledUnprevent
-
-execute as @a[tag=Emperor,tag=Exiler] at @s unless score @s exile matches 0 run tag @s add ExileTag
-execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tag @a[tag=Emperor,team=Golden,tag=Exiler] remove ExileTag
-execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tag @a[tag=Emperor,team=Royal,tag=Exiler] remove ExileTag
-
-execute as @a[tag=Emperor,tag=ExileTag] at @s unless score @s exile matches 0 run tag @s remove Exiler
-execute as @a[tag=Emperor,tag=ExileTag] at @s unless score @s exile matches 0 run tellraw @s ["Cancelled!"]
+execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden,tag=!Exiled] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tag @s add ExiledUnprevent
+execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden,tag=!Exiled] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tag @s add Exiled
 
 execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden,tag=Exiled,tag=!ExiledUnprevent] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tag @s remove Exiled
-execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal,tag=Exiled,tag=!ExiledUnprevent] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tag @s remove Exiled
- 
 
+
+
+execute as @e[tag=ExiledUnprevent] at @s run tag @s remove ExiledUnprevent
+execute as @a[tag=Emperor,tag=!Exiler] at @s unless score @s exile matches 0 run tag @s add Exiler
 execute as @a[tag=Emperor,tag=Exiler] at @s unless score @s exile matches 0 run tag @s remove Exiler
 
-execute as @a[tag=Emperor,tag=!Exiler] at @s unless score @s exile matches 0 run tag @s add Exiler
 
-execute as @a[tag=Emperor] at @s unless score @s exile matches 0 run scoreboard players set @s exile 0
-execute as @a[tag=ExileTag] at @s run tag @s remove ExileTag
-execute as @a[tag=ExiledUnprevent] at @s run tag @s remove ExiledUnprevent
 
-execute as @e[tag=Exiled] at @s run tp @s @s
+# execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tag @s add Exiled
+# execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tag @s add Exiled
+
+# execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tellraw @a[tag=Emperor,team=Golden] ["Exiled/Unexiled!"]
+# execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tellraw @a[tag=Emperor,team=Royal] ["Exiled/Unexiled!"]
+
+# execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden] at @s if score @a[tag=Emperor,team=Golden,tag=!Exiled,tag=Exiler,limit=1] exile = @s id run tag @s add ExiledUnprevent
+# execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal] at @s if score @a[tag=Emperor,team=Royal,tag=!Exiled,tag=Exiler,limit=1] exile = @s id run tag @s add ExiledUnprevent
+
+# execute as @a[tag=Emperor,tag=Exiler] at @s unless score @s exile matches 0 run tag @s add ExileTag
+# execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tag @a[tag=Emperor,team=Golden,tag=Exiler] remove ExileTag
+# execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tag @a[tag=Emperor,team=Royal,tag=Exiler] remove ExileTag
+
+# execute as @a[tag=Emperor,tag=ExileTag] at @s unless score @s exile matches 0 run tag @s remove Exiler
+# execute as @a[tag=Emperor,tag=ExileTag] at @s unless score @s exile matches 0 run tellraw @s ["Cancelled!"]
+# execute as @a[tag=Emperor,tag=ExileTag] at @s unless score @s exile matches 0 run scoreboard players set @s exile 0
+
+# execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden,tag=Exiled,tag=!ExiledUnprevent] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tag @s remove Exiled
+# execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal,tag=Exiled,tag=!ExiledUnprevent] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tag @s remove Exiled
+ 
+
+# execute as @a[tag=Emperor,tag=Exiler] at @s unless score @s exile matches 0 run tag @s remove Exiler
+
+# execute as @a[tag=Emperor,tag=!Exiler] at @s unless score @s exile matches 0 run tag @s add Exiler
+
+# execute as @a[tag=Emperor] at @s unless score @s exile matches 0 run scoreboard players set @s exile 0
+# execute as @a[tag=ExileTag] at @s run tag @s remove ExileTag
+# execute as @a[tag=ExiledUnprevent] at @s run tag @s remove ExiledUnprevent
+
+execute as @e[tag=Exiled] at @s run effect give @s blindness 2 1 true
 
 # execute as @a[tag=!Emperor] at @s run scoreboard players  @s exile
