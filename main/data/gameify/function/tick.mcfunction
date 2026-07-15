@@ -82,7 +82,7 @@ execute as @a[tag=Emperor,tag=!Exiler] at @s unless score @s exile matches 0 run
 execute as @a[tag=Emperor,tag=!Exiler] at @s unless score @s exile matches 0 run tag @s add AntiExiler
 execute as @a[tag=Emperor,tag=Exiler,tag=!AnitExiler] at @s unless score @s exile matches 0 run tag @s remove Exiler
 execute as @a[tag=Emperor,tag=Exiler,tag=AnitExiler] at @s unless score @s exile matches 0 run tag @s remove AntiExiler
-execute as @a[tag=Emperor,tag=Exiler] at @s unless score @s exile matches 0 run tag @s remove Exiler
+execute as @a[tag=Emperor,tag=Exiler] at @s unless score @s exile matches 0 run scoreboard players set @s exile 0
 
 
 
