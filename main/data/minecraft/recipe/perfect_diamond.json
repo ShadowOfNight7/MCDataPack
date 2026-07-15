@@ -19,29 +19,24 @@
     "result": {
         "id": "minecraft:command_block",
         "count": 1,
-        "functions": [
-            {
-                "function": "minecraft:set_components",
-                "components": {
-                    "minecraft:item_model": "minecraft:diamond_nautilus_armor",
-                    "minecraft:item_name": {
-                        "text": "Perfect Diamond",
-                        "color": "gold",
-                        "italic": false
-                    },
-                    "minecraft:lore": [
-                        {
-                            "text": "Only through endless modification has it reached perfection... perhaps that says more about us than it does about it",
-                            "color": "gray",
-                            "italic": false
-                        }
-                    ],
-                    "minecraft:rarity": "uncommon",
-                    "minecraft:custom_data": {
-                        "perfect_diamond": true
-                    }
+        "components": {
+            "minecraft:item_model": "minecraft:diamond_nautilus_armor",
+            "minecraft:item_name": {
+                "text": "Perfect Diamond",
+                "color": "gold",
+                "italic": false
+            },
+            "minecraft:lore": [
+                {
+                    "text": "Only through endless modification has it reached perfection... perhaps that says more about us than it does about it",
+                    "color": "gray",
+                    "italic": false
                 }
+            ],
+            "minecraft:rarity": "uncommon",
+            "minecraft:custom_data": {
+                "perfect_diamond": true
             }
-        ]
+        }
     }
 }
