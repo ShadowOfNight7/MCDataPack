@@ -7,6 +7,7 @@ execute as @a at @s if score @s shifting matches 1.. run scoreboard players set 
 execute as @a unless score @s lives = @s lives run scoreboard players set @s lives 4
 
 execute as @a at @s if score @s deaths matches 1.. run scoreboard players remove @s lives 1
+execute as @a at @s if score @s deaths matches 1.. run tag @s remove NoSoul
 execute as @a at @s if score @s deaths matches 1.. run scoreboard players remove @s deaths 1
 
 execute as @a at @s if score @s lives matches ..0 run gamemode adventure @s
@@ -57,9 +58,9 @@ execute as @a[tag=HighPriest,scores={highPriestTraitor=102000..}] run scoreboard
 
 #Occultist
 execute as @a[scores={occultistAbility1=1..},team=Golden] at @s as @a[team=Royal,distance=..7] run tag @s add Alive
-execute as @a[scores={occultistAbility1=1..},team=Golden] at @s as @a[team=Royal,distance=..7] run scoreboard players add @s occultistAbility2 8
+execute as @a[scores={occultistAbility1=1..},team=Golden] at @s as @a[team=Royal,distance=..7,tag=!NoSoul] run scoreboard players add @s occultistAbility2 8
 execute as @a[scores={occultistAbility1=1..},team=Royal] at @s as @a[team=Golden,distance=..7] run tag @s add Alive
-execute as @a[scores={occultistAbility1=1..},team=Royal] at @s as @a[team=Golden,distance=..7] run scoreboard players add @s occultistAbility2 8
+execute as @a[scores={occultistAbility1=1..},team=Royal] at @s as @a[team=Golden,distance=..7,tag=!NoSoul] run scoreboard players add @s occultistAbility2 8
 execute as @a[scores={occultistAbility1=1..}] at @s run scoreboard players remove @s occultistAbility1 1
 execute as @a[scores={occultistAbility2=1..}] run scoreboard players remove @s occultistAbility2 1
 
@@ -71,6 +72,7 @@ execute unless entity @a[scores={occultistAbility1=1..},team=Royal] run tag @a[t
 
 execute as @a[scores={occultistAbility2=42000..},team=Golden] at @s run give @a[tag=Occultist,limit=1,team=Royal] enchanted_book[custom_name=[{"text":"Soul","bold":true,"italic":false,"color":"blue"}],lore=[[{"text":"Used to break flags!","italic":false,"color":"gray"}]],damage_resistant={types:"minecraft:on_fire"},item_model="minecraft:ender_pearl"]
 execute as @a[scores={occultistAbility2=42000..},team=Royal] at @s run give @a[tag=Occultist,limit=1,team=Golden] enchanted_book[custom_name=[{"text":"Soul","bold":true,"italic":false,"color":"blue"}],lore=[[{"text":"Used to break flags!","italic":false,"color":"gray"}]],damage_resistant={types:"minecraft:on_fire"},item_model="minecraft:ender_pearl"]
+execute as @a[scores={occultistAbility2=42000..}] at @s run tag @s add NoSoul
 execute as @a[scores={occultistAbility2=42000..}] at @s run scoreboard players set @s occultistAbility2 0
 
 execute as @a[scores={occultistAbility2=1..6000}] at @s run particle dust{color:[0.6,0,0],scale:1} ~ ~ ~ 0.5 1 0.5 0.1 1
