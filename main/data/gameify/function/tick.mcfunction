@@ -83,7 +83,6 @@ execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile mat
 
 execute as @a[tag=Emperor,tag=ExileTag] at @s unless score @s exile matches 0 run tag @s remove Exiler
 execute as @a[tag=Emperor,tag=ExileTag] at @s unless score @s exile matches 0 run tellraw @s ["Cancelled!"]
-execute as @a[tag=Emperor,tag=ExileTag] at @s unless score @s exile matches 0 run scoreboard players set @s exile 0
 
 execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden,tag=Exiled,tag=!ExiledUnprevent] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tag @s remove Exiled
 execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal,tag=Exiled,tag=!ExiledUnprevent] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tag @s remove Exiled
