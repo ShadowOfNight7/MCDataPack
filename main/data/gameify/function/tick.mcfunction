@@ -71,8 +71,10 @@ execute as @a[tag=Emperor,tag=!Exiler] at @s unless score @s exile matches 0 run
 
 
 execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden,tag=!Exiled] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tag @s add ExiledUnprevent
+execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden,tag=!Exiled] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tellraw @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] ["Exiled!"]
 execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden,tag=!Exiled] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tag @s add Exiled
 
+execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden,tag=Exiled,tag=!ExiledUnprevent] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tellraw @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] ["Unexiled!"]
 execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden,tag=Exiled,tag=!ExiledUnprevent] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tag @s remove Exiled
 
 
