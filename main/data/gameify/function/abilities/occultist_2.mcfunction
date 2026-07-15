@@ -1,4 +1,4 @@
-scoreboard players set @s cooldown 2400
+scoreboard players set @s cooldown2 2400
 tellraw @s ["You used ",{"text":"Soul Harvest","bold":true,"color":"blue"}, "!"]
 
 # execute as @s at @s positioned 0.001 0.001 0.001 positioned ^ ^ ^1 run summon marker ~ ~ ~ {Tags:["AimingOccult"]}

@@ -27,6 +27,7 @@ execute as @e[tag=TeleportationSkeleton] at @s run function gameify:teleportskel
 
 
 execute as @e[scores={cooldown=1..}] at @s run scoreboard players remove @s cooldown 1
+execute as @e[scores={cooldown2=1..}] at @s run scoreboard players remove @s cooldown2 1
 
 
 

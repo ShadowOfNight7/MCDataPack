@@ -49,6 +49,10 @@ team modify Golden deathMessageVisibility hideForOtherTeams
 scoreboard objectives add cooldown dummy
 scoreboard players set @e cooldown 0
 
+scoreboard objectives add cooldown2 dummy
+scoreboard players set @e cooldown2 0
+
+
 #High Priest
 scoreboard objectives add highPriestAbility1 dummy
 scoreboard players set @e highPriestAbility1 0
