@@ -8,7 +8,7 @@
     ],
     "key": {
         "A": {
-            "items": "minecraft:command_block",
+            "item": "minecraft:command_block",
             "components": {
                 "minecraft:custom_data": {
                     "armor_of_the_damned": true
@@ -16,7 +16,7 @@
             }
         },
         "E": {
-            "items": "minecraft:command_block",
+            "item": "minecraft:command_block",
             "components": {
                 "minecraft:custom_data": {
                     "eyes_of_greed": true
@@ -24,7 +24,7 @@
             }
         },
         "F": {
-            "items": "minecraft:command_block",
+            "item": "minecraft:command_block",
             "components": {
                 "minecraft:custom_data": {
                     "flesh_of_the_exiled": true
@@ -32,7 +32,7 @@
             }
         },
         "C": {
-            "items": "minecraft:command_block",
+            "item": "minecraft:command_block",
             "components": {
                 "minecraft:custom_data": {
                     "wing_of_the_condemned": true
@@ -40,7 +40,7 @@
             }
         },
         "H": {
-            "items": "minecraft:command_block",
+            "item": "minecraft:command_block",
             "components": {
                 "minecraft:custom_data": {
                     "heart_of_gold": true
@@ -48,7 +48,7 @@
             }
         },
         "B": {
-            "items": "minecraft:command_block",
+            "item": "minecraft:command_block",
             "components": {
                 "minecraft:custom_data": {
                     "wing_of_the_banished": true
@@ -56,7 +56,7 @@
             }
         },
         "S": {
-            "items": "minecraft:command_block",
+            "item": "minecraft:command_block",
             "components": {
                 "minecraft:custom_data": {
                     "soul_of_the_evoker": true
@@ -66,6 +66,13 @@
     },
     "result": {
         "id": "minecraft:totem_of_undying",
+        "minecraft:lore": [
+            {
+                "text": "Shall its death have been in vain? Only time will tell...",
+                "color": "gray",
+                "italic": false
+            }
+        ],
         "count": 1
     }
 }

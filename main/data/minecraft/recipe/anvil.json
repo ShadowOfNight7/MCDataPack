@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": {
+      "item": "minecraft:command_block",
+      "components": {
+        "minecraft:custom_data": {
+          "galvanized_steel": true
+        }
+      }
+    },
+    "s": {
+      "item": "minecraft:command_block",
+      "components": {
+        "minecraft:custom_data": {
+          "steel_plate": true
+        }
+      }
+    }
+  },
+  "pattern": [
+    "SSS",
+    " s ",
+    "sss"
+  ],
+  "result": {
+    "id": "damaged_anvil"
+  }
+}

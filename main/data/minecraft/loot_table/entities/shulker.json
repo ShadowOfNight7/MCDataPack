@@ -21,10 +21,22 @@
                             "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:item_model": "minecraft:raw_iron",
-                                "minecraft:item_name": "{\"text\":\"Flesh of the Exiled\",\"color\":\"gold\",\"italic\":false}",
+                                "minecraft:item_name": {
+                                    "text": "Flesh of the Exiled",
+                                    "color": "gold",
+                                    "italic": false
+                                },
                                 "minecraft:lore": [
-                                    "{\"text\":\"Unable to bear the weight of the fall it withered away while hiding in the far reaches of the void, but you have now destroyed what little was left...\",\"color\":\"gray\",\"italic\":false}",
-                                    "{\"text\":\"The third of seven...\",\"color\":\"gray\",\"italic\":false}"
+                                    {
+                                        "text": "Unable to bear the weight of its fall from grace, it withered away, hiding in the far reaches of the void, yet now you have destroyed what little was left...",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "A flesh so exotic said to be the third of seven...",
+                                        "color": "gray",
+                                        "italic": false
+                                    }
                                 ],
                                 "minecraft:rarity": "uncommon",
                                 "minecraft:custom_data": {

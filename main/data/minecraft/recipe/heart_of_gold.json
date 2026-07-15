@@ -8,10 +8,10 @@
     ],
     "key": {
         "H": {
-            "items": "minecraft:piglin_head"
+            "item": "minecraft:piglin_head"
         },
         "G": {
-            "items": "minecraft:command_block",
+            "item": "minecraft:command_block",
             "components": {
                 "minecraft:custom_data": {
                     "pure_gold": true
@@ -27,12 +27,32 @@
                 "function": "minecraft:set_components",
                 "components": {
                     "minecraft:item_model": "minecraft:golden_nautilus_armor",
-                    "minecraft:item_name": "{\"text\":\"Pure Gold\",\"color\":\"gold\",\"italic\":false}",
+                    "minecraft:item_name": {
+                        "text": "Heart of Gold",
+                        "color": "gold",
+                        "italic": false
+                    },
                     "minecraft:lore": [
-                        "{\"text\":\"A substance so pure said to be able to cleanse the sin of other materials...\",\"color\":\"gray\",\"italic\":false}",
-                        "{\"text\":\"The fifth of seven...\",\"color\":\"gray\",\"italic\":false}",
-                        "{\"text\":\"\",\"color\":\"gray\",\"italic\":false}",
-                        "{\"text\":\"P.S. Something about a hitchhiker and strangely the number fourty-two?\",\"color\":\"gray\",\"italic\":false}"
+                        {
+                            "text": "A substance so pure, rumoured to be able to cleanse the sin of other materials...",
+                            "color": "gray",
+                            "italic": false
+                        },
+                        {
+                            "text": "The fifth of seven and the one to bring balance to them...",
+                            "color": "gray",
+                            "italic": false
+                        },
+                        {
+                            "text": "",
+                            "color": "gray",
+                            "italic": false
+                        },
+                        {
+                            "text": "P.S. Something about a hitchhiker... and, strangely, the number forty-two?",
+                            "color": "gray",
+                            "italic": false
+                        }
                     ],
                     "minecraft:rarity": "uncommon",
                     "minecraft:custom_data": {

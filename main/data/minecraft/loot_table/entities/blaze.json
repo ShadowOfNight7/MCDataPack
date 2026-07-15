@@ -21,10 +21,22 @@
                             "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:item_model": "minecraft:blaze_powder",
-                                "minecraft:item_name": "{\"text\":\"Wing of the Condemned\",\"color\":\"gold\",\"italic\":false}",
+                                "minecraft:item_name": {
+                                    "text": "Wing of the Condemned",
+                                    "color": "gold",
+                                    "italic": false
+                                },
                                 "minecraft:lore": [
-                                    "{\"text\":\"Once the wing of an angel but now fallen...\",\"color\":\"gray\",\"italic\":false}",
-                                    "{\"text\":\"The fourth of seven...\",\"color\":\"gray\",\"italic\":false}"
+                                    {
+                                        "text": "Once made of angel feathers, now fallen, it burns with nothing but wrath and anger...",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "Wings of raging fire, said to be the fourth of seven...",
+                                        "color": "gray",
+                                        "italic": false
+                                    }
                                 ],
                                 "minecraft:rarity": "uncommon",
                                 "minecraft:custom_data": {

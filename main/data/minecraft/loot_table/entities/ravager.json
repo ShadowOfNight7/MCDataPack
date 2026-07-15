@@ -21,10 +21,22 @@
                             "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:item_model": "minecraft:emerald",
-                                "minecraft:item_name": "{\"text\":\"Eyes of Greed\",\"color\":\"gold\",\"italic\":false}",
+                                "minecraft:item_name": {
+                                    "text": "Eyes of Greed",
+                                    "color": "gold",
+                                    "italic": false
+                                },
                                 "minecraft:lore": [
-                                    "{\"text\":\"Despite its sins, it might have been the last of what was making its owner human...\",\"color\":\"gray\",\"italic\":false}",
-                                    "{\"text\":\"The second of seven...\",\"color\":\"gray\",\"italic\":false}"
+                                    {
+                                        "text": "Despite its sins, it might have been the last thing that made its owner human...",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "Jewels that glisterened even during a new moon, not far behind the first of seven...",
+                                        "color": "gray",
+                                        "italic": false
+                                    }
                                 ],
                                 "minecraft:rarity": "uncommon",
                                 "minecraft:custom_data": {

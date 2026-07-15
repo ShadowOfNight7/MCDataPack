@@ -28,12 +28,12 @@
                                 },
                                 "minecraft:lore": [
                                     {
-                                        "text": "Let it not have died in vain, may its power not be wasted on sin...",
+                                        "text": "Let it not have died in vain; may its power not be wasted on sin...",
                                         "color": "gray",
                                         "italic": false
                                     },
                                     {
-                                        "text": "The last of seven...",
+                                        "text": "It is said that the evoker's soul is the last of seven, and that it is the most powerful of them all...",
                                         "color": "gray",
                                         "italic": false
                                     }

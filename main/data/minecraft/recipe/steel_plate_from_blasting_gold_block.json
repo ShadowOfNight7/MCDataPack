@@ -1,26 +1,27 @@
 {
-    "type": "minecraft:stonecutting",
-    "ingredient": "minecraft:diamond_block",
+    "type": "minecraft:blasting",
+    "experience": 1.0,
+    "group": "iron_ingot",
+    "ingredient": "minecraft:iron_block",
     "result": {
         "id": "minecraft:command_block",
-        "function": "minecraft:set_components",
         "components": {
-            "minecraft:item_model": "minecraft:tide_armor_trim_smithing_template",
+            "minecraft:item_model": "minecraft:heavy_weighted_pressure_plate",
             "minecraft:item_name": {
-                "text": "Cut Diamond",
+                "text": "Steel Plate",
                 "color": "gold",
                 "italic": false
             },
             "minecraft:lore": [
                 {
-                    "text": "A diamond that has been cut and polished to near perfection",
+                    "text": "Even when compressed to a plate it will not yield",
                     "color": "gray",
                     "italic": false
                 }
             ],
             "minecraft:rarity": "uncommon",
             "minecraft:custom_data": {
-                "cut_diamond": true
+                "steel_plate": true
             }
         }
     }
