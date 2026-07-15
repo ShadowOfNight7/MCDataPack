@@ -57,14 +57,15 @@ execute as @a[tag=HighPriest,scores={highPriestTraitor=102000..}] run scoreboard
 
 #Occultist
 execute as @a[scores={occultistAbility1=1..},team=Golden] at @s as @a[team=Royal,distance=..7] run tag @s add Alive
-execute as @a[scores={occultistAbility1=1..},team=Golden] at @s as @a[team=Royal,distance=..7] run scoreboard players add @s occultistAbility2 7
-execute as @a[scores={occultistAbility1=1..},team=Golden] at @s as @a[team=Royal,distance=7.001..] run scoreboard players remove @s occultistAbility2 1
+execute as @a[scores={occultistAbility1=1..},team=Golden] at @s as @a[team=Royal,distance=..7] run scoreboard players add @s occultistAbility2 8
 execute as @a[scores={occultistAbility1=1..},team=Royal] at @s as @a[team=Golden,distance=..7] run tag @s add Alive
-execute as @a[scores={occultistAbility1=1..},team=Royal] at @s as @a[team=Golden,distance=..7] run scoreboard players add @s occultistAbility2 7
-execute as @a[scores={occultistAbility1=1..},team=Royal] at @s as @a[team=Golden,distance=7.001..] run scoreboard players remove @s occultistAbility2 1
+execute as @a[scores={occultistAbility1=1..},team=Royal] at @s as @a[team=Golden,distance=..7] run scoreboard players add @s occultistAbility2 8
 execute as @a[scores={occultistAbility1=1..}] at @s run scoreboard players remove @s occultistAbility1 1
+execute as @a[scores={occultistAbility2=1..}] run scoreboard players remove @s occultistAbility2 1
 
-execute as @a[scores={occultistAbility2=0}] at @s run tag @s remove Alive
+execute as @a[scores={occultistAbility1=1..},team=Golden] at @s as @a[team=Royal,distance=7.001] run tag @s remove Alive
+execute as @a[scores={occultistAbility1=1..},team=Royal] at @s as @a[team=Golden,distance=7.001] run tag @s remove Alive
+
 execute unless entity @a[scores={occultistAbility1=1..},team=Golden] run tag @a[tag=Royal] remove Alive
 execute unless entity @a[scores={occultistAbility1=1..},team=Royal] run tag @a[tag=Golden] remove Alive
 
