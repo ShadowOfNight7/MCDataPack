@@ -26,7 +26,6 @@
                                     "{\"text\":\"Its owner once served the heavens, but now it roams the sky longing to return...\",\"color\":\"gray\",\"italic\":false}",
                                     "{\"text\":\"The sixth of seven...\",\"color\":\"gray\",\"italic\":false}"
                                 ],
-                                "minecraft:custom_model_data": 1001,
                                 "minecraft:rarity": "uncommon",
                                 "minecraft:custom_data": {
                                     "wing_of_the_banished": true

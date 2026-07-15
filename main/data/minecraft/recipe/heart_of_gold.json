@@ -34,7 +34,6 @@
                         "{\"text\":\"\",\"color\":\"gray\",\"italic\":false}",
                         "{\"text\":\"P.S. Something about a hitchhiker and strangely the number fourty-two?\",\"color\":\"gray\",\"italic\":false}"
                     ],
-                    "minecraft:custom_model_data": 1001,
                     "minecraft:rarity": "uncommon",
                     "minecraft:custom_data": {
                         "heart_of_gold": true

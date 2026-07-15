@@ -14,7 +14,6 @@
                     "minecraft:lore": [
                         "{\"text\":\"Oh, what little is truly gold after removing all the impurities from it\",\"color\":\"gray\",\"italic\":false}"
                     ],
-                    "minecraft:custom_model_data": 1001,
                     "minecraft:rarity": "uncommon",
                     "minecraft:custom_data": {
                         "pure_gold": true
