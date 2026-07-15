@@ -65,6 +65,11 @@ scoreboard players set @e highPriestTraitorNum 0
 
 #Emperor
 scoreboard objectives add exile trigger
+scoreboard objectives add placeFlag trigger
+
+scoreboard objectives add flagHealth dummy
+
+scoreboard objectives add flagNumber dummy
 
 
 #Occultist

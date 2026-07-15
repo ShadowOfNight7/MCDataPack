@@ -10,4 +10,3 @@ tellraw @s ["You used ",{"text":"Soul Harvest","bold":true,"color":"blue"}, "!"]
 execute as @s at @s positioned ^ ^ ^1 run summon marker ~ ~1 ~ {Tags:["SoulBinding","SoulBinding2"]}
 execute as @s at @s rotated ~ ~ run rotate @e[tag=SoulBinding2,limit=1,sort=nearest] ~ ~
 tag @e[tag=SoulBinding2] remove SoulBinding2
-say a
