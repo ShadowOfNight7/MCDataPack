@@ -47,7 +47,7 @@ team modify Golden deathMessageVisibility hideForOtherTeams
 scoreboard objectives add cooldown dummy
 scoreboard players set @e cooldown 0
 
-
+#High Priest
 scoreboard objectives add highPriestAbility1 dummy
 scoreboard players set @e highPriestAbility1 0
 
@@ -56,3 +56,6 @@ scoreboard players set @e highPriestTraitor 0
 
 scoreboard objectives add highPriestTraitorNum dummy
 scoreboard players set @e highPriestTraitorNum 0
+
+#Emperor
+scoreboard objectives add exile trigger
