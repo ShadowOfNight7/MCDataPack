@@ -70,8 +70,8 @@ execute as @a[tag=Emperor,tag=!Exiler] at @s unless score @s exile matches 0 run
 
 execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tag @s add Exiled
 execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tag @s add Exiled
-execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tag @s add ExiledUnprevent
-execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tag @s add ExiledUnprevent
+execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden] at @s if score @a[tag=Emperor,team=Golden,tag=!Exiled,tag=Exiler,limit=1] exile = @s id run tag @s add ExiledUnprevent
+execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal] at @s if score @a[tag=Emperor,team=Royal,tag=!Exiled,tag=Exiler,limit=1] exile = @s id run tag @s add ExiledUnprevent
 
 execute as @a[tag=Emperor,tag=Exiler] at @s unless score @s exile matches 0 run tag @s add ExileTag
 execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tag @a[tag=Emperor,team=Golden,tag=Exiler] remove ExileTag
