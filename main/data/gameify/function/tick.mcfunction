@@ -168,8 +168,9 @@ execute as @e[tag=FlagText] at @s run data merge entity @s {Tags:["FlagText"],bi
 #Crusader
 execute as @a[tag=Crusader] at @s run attribute @s max_health base set 30
 
+execute as @e[tag=ArrowRain] at @s run function gameify:abilities/crusader_3 with entity @s
 
-
+execute as @e[tag=ArrowRaining,nbt={inGround:true}] at @s run kill @s
 
 
 
