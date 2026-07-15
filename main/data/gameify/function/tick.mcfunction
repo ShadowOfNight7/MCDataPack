@@ -95,3 +95,4 @@ execute as @a[tag=ExiledUnprevent] at @s run tag @s remove ExiledUnprevent
 execute as @e[tag=Exiled] at @s run tp @s @s
 
 # execute as @a[tag=!Emperor] at @s run scoreboard players  @s exile
+say a
