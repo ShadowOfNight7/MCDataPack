@@ -87,18 +87,19 @@ execute as @a[scores={occultistAbility2=42001..}] at @s run effect give @s glowi
 
 execute as @e[tag=SoulBinding] at @s run tp @s ^ ^ ^0.5
 execute as @e[tag=SoulBinding] at @s run particle dust{color:[0,0,0],scale:2} ~ ~0.5 ~ 0 0 0 0 0 force
-execute as @e[tag=SoulBinding] at @s as @a[scores={occultistAbility2=42000..},distance=..1] at @s run tag @s add NoSoul
-execute as @e[tag=SoulBinding] at @s as @a[scores={occultistAbility2=42000..},distance=..1,team=Golden] at @s run give @a[tag=Occultist,team=Royal] enchanted_book[custom_name=[{"text":"Soul","bold":true,"italic":false,"color":"blue"}],lore=[[{"text":"Used to break flags!","italic":false,"color":"gray"}]],damage_resistant={types:"minecraft:on_fire"},item_model="minecraft:ender_pearl"]
-execute as @e[tag=SoulBinding] at @s as @a[scores={occultistAbility2=42000..},distance=..1,team=Royal] at @s run give @a[tag=Occultist,team=Golden] enchanted_book[custom_name=[{"text":"Soul","bold":true,"italic":false,"color":"blue"}],lore=[[{"text":"Used to break flags!","italic":false,"color":"gray"}]],damage_resistant={types:"minecraft:on_fire"},item_model="minecraft:ender_pearl"]
+execute as @e[tag=SoulBinding] at @s positioned ~ ~0.5 ~ as @a[scores={occultistAbility2=42000..},distance=..1.5] at @s run tag @s add NoSoul
+execute as @e[tag=SoulBinding] at @s positioned ~ ~0.5 ~ as @a[scores={occultistAbility2=42000..},distance=..1.5,team=Golden] at @s run give @a[tag=Occultist,team=Royal] enchanted_book[custom_name=[{"text":"Soul","bold":true,"italic":false,"color":"blue"}],lore=[[{"text":"Used to break flags!","italic":false,"color":"gray"}]],damage_resistant={types:"minecraft:on_fire"},item_model="minecraft:ender_pearl"]
+execute as @e[tag=SoulBinding] at @s positioned ~ ~0.5 ~ as @a[scores={occultistAbility2=42000..},distance=..1.5,team=Royal] at @s run give @a[tag=Occultist,team=Golden] enchanted_book[custom_name=[{"text":"Soul","bold":true,"italic":false,"color":"blue"}],lore=[[{"text":"Used to break flags!","italic":false,"color":"gray"}]],damage_resistant={types:"minecraft:on_fire"},item_model="minecraft:ender_pearl"]
 
-execute as @e[tag=SoulBinding] at @s as @a[scores={occultistAbility2=42000..},distance=..1,team=Golden] at @s run tag @s add NoSoul
-execute as @e[tag=SoulBinding] at @s as @a[scores={occultistAbility2=42000..},distance=..1,team=Royal] at @s run tag @s add NoSoul
+execute as @e[tag=SoulBinding] at @s positioned ~ ~0.5 ~ as @a[scores={occultistAbility2=42000..},distance=..1.5,team=Golden] at @s run tag @s add NoSoul
+execute as @e[tag=SoulBinding] at @s positioned ~ ~0.5 ~ as @a[scores={occultistAbility2=42000..},distance=..1.5,team=Royal] at @s run tag @s add NoSoul
 
-execute as @e[tag=SoulBinding] at @s as @a[scores={occultistAbility2=42000..},distance=..1,team=Golden] at @s run scoreboard players set @s occultistAbility2 0
-execute as @e[tag=SoulBinding] at @s as @a[scores={occultistAbility2=42000..},distance=..1,team=Royal] at @s run scoreboard players set @s occultistAbility2 0
+execute as @e[tag=SoulBinding] at @s positioned ~ ~0.5 ~ as @a[scores={occultistAbility2=42000..},distance=..1.5,team=Golden] at @s run scoreboard players set @s occultistAbility2 0
+execute as @e[tag=SoulBinding] at @s positioned ~ ~0.5 ~ as @a[scores={occultistAbility2=42000..},distance=..1.5,team=Royal] at @s run scoreboard players set @s occultistAbility2 0
 
-execute as @e[tag=SoulBinding] at @s as @a[scores={occultistAbility2=42000..},distance=..1] at @s run tag @s add NoSoul
-execute as @e[tag=SoulBinding] at @s as @a[scores={occultistAbility2=..41999},distance=..1] at @s run effect give @s wither 10 3 false
+execute as @e[tag=SoulBinding] at @s positioned ~ ~0.5 ~ as @a[scores={occultistAbility2=42000..},distance=..1.5] at @s run tag @s add NoSoul
+
+execute as @e[tag=SoulBinding] at @s positioned ~ ~0.5 ~ as @a[scores={occultistAbility2=..41999},distance=..1.5] at @s run effect give @s wither 10 3 false
 execute as @e[tag=SoulBinding,scores={time=200..}] at @s run kill @s
 #1x Emperor - Aboslute Power, /exile command, places banners, players will have to obey him, wears the the crown of absolute control which grants protection and strength, weilds the strongest of the three royal heirlooms, gains the powers of the elder sages if they die, 20 hearts
 # 1x High Priest - Sense traitors nearby grants healing and negative effect cleansing, gains the power of Occultist if he dies
