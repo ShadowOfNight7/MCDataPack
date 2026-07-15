@@ -92,8 +92,8 @@ execute as @a[tag=Emperor,tag=Exiler,tag=!AntiExiler] at @s unless score @s exil
 execute as @a[tag=Emperor,tag=Exiler,tag=AntiExiler] at @s unless score @s exile matches 0 run tag @s remove AntiExiler
 execute as @a[tag=Emperor] at @s unless score @s exile matches 0 run scoreboard players set @s exile 0
 
-execute as @e[tag=Exiled] at @s run team leave *
-
+execute as @a[tag=Exiled] at @s run team leave @s
+execute as @a[tag=Exiled] at @s run tag @s remove Exiled
 
 # execute as @a[tag=Emperor,team=Golden,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Golden] at @s if score @a[tag=Emperor,team=Golden,tag=Exiler,limit=1] exile = @s id run tag @s add Exiled
 # execute as @a[tag=Emperor,team=Royal,tag=Exiler] at @s unless score @s exile matches 0 as @a[tag=!Emperor,team=Royal] at @s if score @a[tag=Emperor,team=Royal,tag=Exiler,limit=1] exile = @s id run tag @s add Exiled
