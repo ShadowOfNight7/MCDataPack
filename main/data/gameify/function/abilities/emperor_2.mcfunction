@@ -53,5 +53,5 @@ execute as @s at @s if entity @e[tag=RoyalFlag,distance=..2] run effect give @a[
 execute as @s at @s if entity @e[tag=RoyalFlag,distance=..2] run effect give @a[team=Royal,distance=..15] night_vision 1 0 false
 
 
-execute as @s at @s if score @s time matches 300.. if score @s health matches ..499 run scoreboard players add @s flagHealth 1
-execute as @s at @s if score @s time matches 300.. if score @s health matches ..499 run scoreboard players set @s time 100
+execute as @s at @s if score @s time matches 300.. if score @s flagHealth matches ..499 run scoreboard players add @s flagHealth 1
+execute as @s at @s if score @s time matches 300.. if score @s flagHealth matches ..499 run scoreboard players set @s time 
