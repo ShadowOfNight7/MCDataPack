@@ -2,16 +2,15 @@
     "type": "minecraft:crafting_shaped",
     "category": "building",
     "pattern": [
-        " C ",
-        "CCC",
-        " C "
+        "SS",
+        "SS"
     ],
     "key": {
-        "C": {
+        "S": {
             "items": "minecraft:command_block",
             "components": {
                 "minecraft:custom_data": {
-                    "cut_diamond": true
+                    "steel_plate": true
                 }
             }
         }
@@ -23,22 +22,22 @@
             {
                 "function": "minecraft:set_components",
                 "components": {
-                    "minecraft:item_model": "minecraft:diamond_nautilus_armor",
+                    "minecraft:item_model": "minecraft:loadstone",
                     "minecraft:item_name": {
-                        "text": "Perfect Diamond",
+                        "text": "Galvanized Steel",
                         "color": "gold",
                         "italic": false
                     },
                     "minecraft:lore": [
                         {
-                            "text": "Only through endless modification has it reached perfection... perhaps that says more about us than it does about it",
+                            "text": "Why is it galvanized? I have no idea, its not like iron rusts in this game",
                             "color": "gray",
                             "italic": false
                         }
                     ],
                     "minecraft:rarity": "uncommon",
                     "minecraft:custom_data": {
-                        "perfect_diamond": true
+                        "galvanized_steel": true
                     }
                 }
             }

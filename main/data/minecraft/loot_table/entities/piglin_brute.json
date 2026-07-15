@@ -21,10 +21,22 @@
                             "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:item_model": "minecraft:raw_gold",
-                                "minecraft:item_name": "{\"text\":\"Armor of the Damned\",\"color\":\"gold\",\"italic\":false}",
+                                "minecraft:item_name": {
+                                    "text": "Armor of the Damned",
+                                    "color": "gold",
+                                    "italic": false
+                                },
                                 "minecraft:lore": [
-                                    "{\"text\":\"The very metal that once adorned a proud warrior, but his sins lead him to the depths...\",\"color\":\"gray\",\"italic\":false}",
-                                    "{\"text\":\"The first of seven...\",\"color\":\"gray\",\"italic\":false}"
+                                    {
+                                        "text": "The very metal that once adorned a proud crusader, whose sins led him to the depths...",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "It which shields the bravest said to be the leader of seven...",
+                                        "color": "gray",
+                                        "italic": false
+                                    }
                                 ],
                                 "minecraft:rarity": "uncommon",
                                 "minecraft:custom_data": {

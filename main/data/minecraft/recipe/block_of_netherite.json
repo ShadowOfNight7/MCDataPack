@@ -1,0 +1,70 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+        "DN ",
+        "NNN",
+        "GNS"
+    ],
+    "key": {
+        "N": {
+            "items": "minecraft:command_block",
+            "components": {
+                "minecraft:custom_data": {
+                    "cooked_netherite_ingot": true
+                }
+            }
+        },
+        "D": {
+            "items": "minecraft:command_block",
+            "components": {
+                "minecraft:custom_data": {
+                    "perfect_diamond": true
+                }
+            }
+        },
+        "G": {
+            "items": "minecraft:command_block",
+            "components": {
+                "minecraft:custom_data": {
+                    "pure_gold": true
+                }
+            }
+        },
+        "S": {
+            "items": "minecraft:command_block",
+            "components": {
+                "minecraft:custom_data": {
+                    "galvanized_steel": true
+                }
+            }
+        }
+    },
+    "result": {
+        "id": "minecraft:command_block",
+        "functions": [
+            {
+                "function": "minecraft:set_components",
+                "components": {
+                    "minecraft:item_model": "minecraft:netherite_stair",
+                    "minecraft:item_name": {
+                        "text": "True Netherite Block",
+                        "color": "gold",
+                        "italic": false
+                    },
+                    "minecraft:lore": [
+                        {
+                            "text": "It's missing a chunck in the corner, whatever, it still works",
+                            "color": "gray",
+                            "italic": false
+                        }
+                    ],
+                    "minecraft:rarity": "uncommon",
+                    "minecraft:custom_data": {
+                        "cooked_netherite_block": true
+                    }
+                }
+            }
+        ]
+    }
+}

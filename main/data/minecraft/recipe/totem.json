@@ -66,6 +66,13 @@
     },
     "result": {
         "id": "minecraft:totem_of_undying",
+        "minecraft:lore": [
+            {
+                "text": "Shall its death have been in vain? Only time will tell...",
+                "color": "gray",
+                "italic": false
+            }
+        ],
         "count": 1
     }
 }
