@@ -5,29 +5,24 @@
     "ingredient": "minecraft:gold_block",
     "result": {
         "id": "minecraft:command_block",
-        "functions": [
-            {
-                "function": "minecraft:set_components",
-                "components": {
-                    "minecraft:item_model": "minecraft:light_weighted_pressure_plate",
-                    "minecraft:item_name": {
-                        "text": "Pure Gold",
-                        "color": "gold",
-                        "italic": false
-                    },
-                    "minecraft:lore": [
-                        {
-                            "text": "Oh, what little remains once gold has been cleansed of every impurity...",
-                            "color": "gray",
-                            "italic": false
-                        }
-                    ],
-                    "minecraft:rarity": "uncommon",
-                    "minecraft:custom_data": {
-                        "pure_gold": true
-                    }
+        "components": {
+            "minecraft:item_model": "minecraft:light_weighted_pressure_plate",
+            "minecraft:item_name": {
+                "text": "Pure Gold",
+                "color": "gold",
+                "italic": false
+            },
+            "minecraft:lore": [
+                {
+                    "text": "Oh, what little remains once gold has been cleansed of every impurity...",
+                    "color": "gray",
+                    "italic": false
                 }
+            ],
+            "minecraft:rarity": "uncommon",
+            "minecraft:custom_data": {
+                "pure_gold": true
             }
-        ]
+        }
     }
 }
