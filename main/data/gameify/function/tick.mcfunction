@@ -13,6 +13,8 @@ execute as @a at @s if score @s lives matches ..0 run gamemode adventure @s
 
 execute as @e[scores={time=1},tag=!NoID] at @s run function gameify:id with entity @s
 
+execute as @e at @s store result score @s health run data get entity @s Health 10000
+
 
 execute as @e[type=#skeletons,scores={time=1}] at @s run tag @s add Enhanced
 execute as @e[type=#skeletons,scores={time=1}] at @s run team join skeletons
@@ -127,3 +129,9 @@ execute as @a[tag=Exiled] at @s run tag @s remove Exiled
 execute as @e[tag=Exiled] at @s run effect give @s blindness 2 1 true
 
 # execute as @a[tag=!Emperor] at @s run scoreboard players  @s exile
+
+execute as @a[tag=Alive] at @s if score @s health matches 10001.. run damage @s 1 out_of_world
+execute as @a[tag=Alive] at @s run effect give @s slowness 1 4 true
+execute as @a[tag=Alive] at @s run effect give @s resistance 1 10 true
+execute as @a[tag=Alive] at @s run attribute @s jump_strength base set 0
+execute as @a[tag=!Alive] at @s run attribute @s jump_strength base reset
