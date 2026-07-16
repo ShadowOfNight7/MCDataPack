@@ -78,3 +78,12 @@ scoreboard players set @e occultistAbility1 0
 
 scoreboard objectives add occultistAbility2 dummy
 scoreboard players set @e occultistAbility2 0
+
+#False Prophet
+scoreboard objectives add reveal trigger
+
+scoreboard objectives add conceal trigger
+
+#Knight
+scoreboard objectives add knightAbility1 dummy
+scoreboard players set @e knightAbility1 0

@@ -167,6 +167,7 @@ execute as @e[tag=FlagText] at @s run data merge entity @s {Tags:["FlagText"],bi
 
 #Crusader
 execute as @a[tag=Crusader] at @s run attribute @s max_health base set 30
+execute as @a[tag=!Crusader] at @s run attribute @s max_health base set 20
 
 execute as @e[tag=ArrowRainingLightning,nbt={inGround:true}] at @s run summon lightning_bolt ~ ~ ~
 execute as @e[tag=ArrowRainingExplode,nbt={inGround:true}] at @s run summon creeper ~ ~ ~ {Fuse:0}
@@ -176,8 +177,49 @@ execute as @e[tag=ArrowRaining,nbt={inGround:true}] at @s run kill @s
 execute as @e[tag=ArrowRain,scores={time=20..}] at @s run function gameify:abilities/crusader_3 with entity @s
 
 
+#Chaplain
 
 
+#False Prophet
+execute as @a[tag=FalseProphet] at @s run scoreboard players enable @s conceal
+execute as @a[tag=FalseProphet] at @s run scoreboard players enable @s reveal
+
+execute as @a[tag=FalseProphet,tag=!Fake,team=Golden] at @s unless score @s conceal matches 0 run tag @s add Golden
+execute as @a[tag=FalseProphet,tag=!Fake,team=Royal] at @s unless score @s conceal matches 0 run tag @s add Royal
+execute as @a[tag=FalseProphet,tag=!Fake] at @s unless score @s conceal matches 0 run tag @s add Fake
+execute as @a[tag=FalseProphet,tag=Fake,tag=Golden] at @s unless score @s conceal matches 0 run team join Royal @s
+execute as @a[tag=FalseProphet,tag=Fake,tag=Royal] at @s unless score @s conceal matches 0 run team join Golden @s
+execute as @a[tag=FalseProphet,tag=Fake] at @s unless score @s conceal matches 0 run tag @s remove Royal
+execute as @a[tag=FalseProphet,tag=Fake] at @s unless score @s conceal matches 0 run tag @s remove Golden
+
+execute as @a[tag=FalseProphet,tag=Fake,team=Golden] at @s unless score @s reveal matches 0 run tag @s add Golden
+execute as @a[tag=FalseProphet,tag=Fake,team=Royal] at @s unless score @s reveal matches 0 run tag @s add Royal
+execute as @a[tag=FalseProphet,tag=Fake,tag=Golden] at @s unless score @s reveal matches 0 run team join Royal @s
+execute as @a[tag=FalseProphet,tag=Fake,tag=Royal] at @s unless score @s reveal matches 0 run team join Golden @s
+execute as @a[tag=FalseProphet,tag=Royal] at @s unless score @s reveal matches 0 run tag @s remove Royal
+execute as @a[tag=FalseProphet,tag=Golden] at @s unless score @s reveal matches 0 run tag @s remove Golden
+execute as @a[tag=FalseProphet,tag=Fake] at @s unless score @s reveal matches 0 run tag @s remove Fake
+
+execute as @a[tag=FalseProphet] at @s unless score @s conceal matches 0 run scoreboard players set @s conceal 0
+execute as @a[tag=FalseProphet] at @s unless score @s reveal matches 0 run scoreboard players set @s reveal 0
+
+
+#Workers
+execute as @a[tag=Worker] at @s run attribute @s block_break_speed base set 2
+execute as @a[tag=Worker] at @s run attribute @s block_interaction_range base set 6
+execute as @a[tag=Worker] at @s run attribute @s luck base set 1
+execute as @a[tag=Worker] at @s run attribute @s safe_fall_distance base set 6
+execute as @a[tag=Worker] at @s run attribute @s water_movement_efficiency base set 10
+execute as @a[tag=Worker] at @s run attribute @s oxygen_bonus base set 1
+execute as @a[tag=Worker] at @s run attribute @s movement_efficiency base set 0.9
+
+execute as @a[tag=!Worker] at @s run attribute @s block_break_speed base reset
+execute as @a[tag=!Worker] at @s run attribute @s block_interaction_range base reset
+execute as @a[tag=!Worker] at @s run attribute @s luck base reset
+execute as @a[tag=!Worker] at @s run attribute @s safe_fall_distance base reset
+execute as @a[tag=!Worker] at @s run attribute @s water_movement_efficiency base reset
+execute as @a[tag=!Worker] at @s run attribute @s oxygen_bonus base reset
+execute as @a[tag=!Worker] at @s run attribute @s movement_efficiency base reset
 
 
 
