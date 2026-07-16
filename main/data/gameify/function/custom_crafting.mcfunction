@@ -1,3 +1,6 @@
 advancement revoke @s only gameify:placeblock
 
-setblock ~ ~ ~ bedrock
+scoreboard players set @s posX 20
+scoreboard players set @s posY 20
+scoreboard players set @s posZ 20
+
