@@ -127,44 +127,44 @@ execute if score @s posZ matches 100 if score @e[tag=CustomHold,limit=1] posY ma
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[8] store result score @s posX run data get block ~ ~ ~ Items[8].count
 scoreboard players remove @s posX 1
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[8] store result block ~ ~ ~ Items[8].count byte 1 run scoreboard players get @s posX
-execute if score @s posZ matches 100 if score @s posX matches 1 run data remove block ~ ~ ~ Items[8]
+execute if score @s posZ matches 100 if score @s posX matches 0 run data remove block ~ ~ ~ Items[8]
 
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[7] store result score @s posX run data get block ~ ~ ~ Items[7].count
 scoreboard players remove @s posX 1
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[7] store result block ~ ~ ~ Items[7].count byte 1 run scoreboard players get @s posX
-execute if score @s posZ matches 100 if score @s posX matches 1 run data remove block ~ ~ ~ Items[7]
+execute if score @s posZ matches 100 if score @s posX matches 0 run data remove block ~ ~ ~ Items[7]
 
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[6] store result score @s posX run data get block ~ ~ ~ Items[6].count
 scoreboard players remove @s posX 1
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[6] store result block ~ ~ ~ Items[6].count byte 1 run scoreboard players get @s posX
-execute if score @s posZ matches 100 if score @s posX matches 1 run data remove block ~ ~ ~ Items[6]
+execute if score @s posZ matches 100 if score @s posX matches 0 run data remove block ~ ~ ~ Items[6]
 
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[5] store result score @s posX run data get block ~ ~ ~ Items[5].count
 scoreboard players remove @s posX 1
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[5] store result block ~ ~ ~ Items[5].count byte 1 run scoreboard players get @s posX
-execute if score @s posZ matches 100 if score @s posX matches 1 run data remove block ~ ~ ~ Items[5]
+execute if score @s posZ matches 100 if score @s posX matches 0 run data remove block ~ ~ ~ Items[5]
 
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[4] store result score @s posX run data get block ~ ~ ~ Items[4].count
 scoreboard players remove @s posX 1
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[4] store result block ~ ~ ~ Items[4].count byte 1 run scoreboard players get @s posX
-execute if score @s posZ matches 100 if score @s posX matches 1 run data remove block ~ ~ ~ Items[4]
+execute if score @s posZ matches 100 if score @s posX matches 0 run data remove block ~ ~ ~ Items[4]
 
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[3] store result score @s posX run data get block ~ ~ ~ Items[3].count
 scoreboard players remove @s posX 1
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[3] store result block ~ ~ ~ Items[3].count byte 1 run scoreboard players get @s posX
-execute if score @s posZ matches 100 if score @s posX matches 1 run data remove block ~ ~ ~ Items[3]
+execute if score @s posZ matches 100 if score @s posX matches 0 run data remove block ~ ~ ~ Items[3]
 
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[2] store result score @s posX run data get block ~ ~ ~ Items[2].count
 scoreboard players remove @s posX 1
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[2] store result block ~ ~ ~ Items[2].count byte 1 run scoreboard players get @s posX
-execute if score @s posZ matches 100 if score @s posX matches 1 run data remove block ~ ~ ~ Items[2]
+execute if score @s posZ matches 100 if score @s posX matches 0 run data remove block ~ ~ ~ Items[2]
 
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[1] store result score @s posX run data get block ~ ~ ~ Items[1].count
 scoreboard players remove @s posX 1
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[1] store result block ~ ~ ~ Items[1].count byte 1 run scoreboard players get @s posX
-execute if score @s posZ matches 100 if score @s posX matches 1 run data remove block ~ ~ ~ Items[1]
+execute if score @s posZ matches 100 if score @s posX matches 0 run data remove block ~ ~ ~ Items[1]
 
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[0] store result score @s posX run data get block ~ ~ ~ Items[0].count
 scoreboard players remove @s posX 1
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[0] store result block ~ ~ ~ Items[0].count byte 1 run scoreboard players get @s posX
-execute if score @s posZ matches 100 if score @s posX matches 1 run data remove block ~ ~ ~ Items[0]
+execute if score @s posZ matches 100 if score @s posX matches 0 run data remove block ~ ~ ~ Items[0]
