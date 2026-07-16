@@ -206,7 +206,6 @@ execute as @a[tag=FalseProphet] at @s unless score @s reveal matches 0 run score
 
 #Workers
 execute as @a[tag=Worker] at @s run attribute @s block_break_speed base set 2
-execute as @a[tag=Worker] at @s run attribute @s block_interaction_range base set 6
 execute as @a[tag=Worker] at @s run attribute @s luck base set 1
 execute as @a[tag=Worker] at @s run attribute @s safe_fall_distance base set 6
 execute as @a[tag=Worker] at @s run attribute @s water_movement_efficiency base set 10
@@ -214,7 +213,6 @@ execute as @a[tag=Worker] at @s run attribute @s oxygen_bonus base set 1
 execute as @a[tag=Worker] at @s run attribute @s movement_efficiency base set 0.9
 
 execute as @a[tag=!Worker] at @s run attribute @s block_break_speed base reset
-execute as @a[tag=!Worker] at @s run attribute @s block_interaction_range base reset
 execute as @a[tag=!Worker] at @s run attribute @s luck base reset
 execute as @a[tag=!Worker] at @s run attribute @s safe_fall_distance base reset
 execute as @a[tag=!Worker] at @s run attribute @s water_movement_efficiency base reset
