@@ -1,6 +1,5 @@
 scoreboard players set @s posZ 100
 
-execute if score @s posZ matches 100 run say a
 
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[0] store result score @s posX run data get entity @s Items[0].id
 execute if score @s posZ matches 100 as @s at @s unless data block ~ ~ ~ Items[0] run scoreboard players set @s posX -999
@@ -14,7 +13,7 @@ execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s if data entity 
 execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s unless data entity @s equipment.mainhand.components."minecraft:container"[0].components."minecraft:custom_data".item_id run scoreboard players set @s posX -999
 execute if score @s posZ matches 100 as @s at @s unless score @s posX = @e[tag=CustomHold,limit=1] posX run scoreboard players set @s posZ 0
 
-execute if score @s posZ matches 100 run say a
+execute if score @s posZ matches 100 run say 1
 
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[1] store result score @s posX run data get entity @s Items[1].id
 execute if score @s posZ matches 100 as @s at @s unless data block ~ ~ ~ Items[1] run scoreboard players set @s posX -999
@@ -28,7 +27,7 @@ execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s if data entity 
 execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s unless data entity @s equipment.mainhand.components."minecraft:container"[1].components."minecraft:custom_data".item_id run scoreboard players set @s posX -999
 execute if score @s posZ matches 100 as @s at @s unless score @s posX = @e[tag=CustomHold,limit=1] posX run scoreboard players set @s posZ 0
 
-execute if score @s posZ matches 100 run say a
+execute if score @s posZ matches 100 run say 2
 
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[2] store result score @s posX run data get entity @s Items[2].id
 execute if score @s posZ matches 100 as @s at @s unless data block ~ ~ ~ Items[2] run scoreboard players set @s posX -999
@@ -42,7 +41,7 @@ execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s if data entity 
 execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s unless data entity @s equipment.mainhand.components."minecraft:container"[2].components."minecraft:custom_data".item_id run scoreboard players set @s posX -999
 execute if score @s posZ matches 100 as @s at @s unless score @s posX = @e[tag=CustomHold,limit=1] posX run scoreboard players set @s posZ 0
 
-execute if score @s posZ matches 100 run say a
+execute if score @s posZ matches 100 run say 3
 
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[3] store result score @s posX run data get entity @s Items[3].id
 execute if score @s posZ matches 100 as @s at @s unless data block ~ ~ ~ Items[3] run scoreboard players set @s posX -999
@@ -56,7 +55,7 @@ execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s if data entity 
 execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s unless data entity @s equipment.mainhand.components."minecraft:container"[3].components."minecraft:custom_data".item_id run scoreboard players set @s posX -999
 execute if score @s posZ matches 100 as @s at @s unless score @s posX = @e[tag=CustomHold,limit=1] posX run scoreboard players set @s posZ 0
 
-execute if score @s posZ matches 100 run say a
+execute if score @s posZ matches 100 run say 4
 
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[4] store result score @s posX run data get entity @s Items[4].id
 execute if score @s posZ matches 100 as @s at @s unless data block ~ ~ ~ Items[4] run scoreboard players set @s posX -999
@@ -70,7 +69,7 @@ execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s if data entity 
 execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s unless data entity @s equipment.mainhand.components."minecraft:container"[4].components."minecraft:custom_data".item_id run scoreboard players set @s posX -999
 execute if score @s posZ matches 100 as @s at @s unless score @s posX = @e[tag=CustomHold,limit=1] posX run scoreboard players set @s posZ 0
 
-execute if score @s posZ matches 100 run say a
+execute if score @s posZ matches 100 run say 5
 
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[5] store result score @s posX run data get entity @s Items[5].id
 execute if score @s posZ matches 100 as @s at @s unless data block ~ ~ ~ Items[5] run scoreboard players set @s posX -999
@@ -84,7 +83,7 @@ execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s if data entity 
 execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s unless data entity @s equipment.mainhand.components."minecraft:container"[5].components."minecraft:custom_data".item_id run scoreboard players set @s posX -999
 execute if score @s posZ matches 100 as @s at @s unless score @s posX = @e[tag=CustomHold,limit=1] posX run scoreboard players set @s posZ 0
 
-execute if score @s posZ matches 100 run say a
+execute if score @s posZ matches 100 run say 6
 
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[6] store result score @s posX run data get entity @s Items[6].id
 execute if score @s posZ matches 100 as @s at @s unless data block ~ ~ ~ Items[6] run scoreboard players set @s posX -999
@@ -98,7 +97,7 @@ execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s if data entity 
 execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s unless data entity @s equipment.mainhand.components."minecraft:container"[6].components."minecraft:custom_data".item_id run scoreboard players set @s posX -999
 execute if score @s posZ matches 100 as @s at @s unless score @s posX = @e[tag=CustomHold,limit=1] posX run scoreboard players set @s posZ 0
 
-execute if score @s posZ matches 100 run say a
+execute if score @s posZ matches 100 run say 7
 
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[7] store result score @s posX run data get entity @s Items[7].id
 execute if score @s posZ matches 100 as @s at @s unless data block ~ ~ ~ Items[7] run scoreboard players set @s posX -999
@@ -112,7 +111,7 @@ execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s if data entity 
 execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s unless data entity @s equipment.mainhand.components."minecraft:container"[7].components."minecraft:custom_data".item_id run scoreboard players set @s posX -999
 execute if score @s posZ matches 100 as @s at @s unless score @s posX = @e[tag=CustomHold,limit=1] posX run scoreboard players set @s posZ 0
 
-execute if score @s posZ matches 100 run say a
+execute if score @s posZ matches 100 run say 8
 
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[8] store result score @s posX run data get entity @s Items[8].id
 execute if score @s posZ matches 100 as @s at @s unless data block ~ ~ ~ Items[8] run scoreboard players set @s posX -999
