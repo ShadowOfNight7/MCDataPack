@@ -11,3 +11,5 @@ execute as @s unless entity @e[tag=CustomCrafterInitial] run scoreboard players 
 execute as @s if score @s posX matches 0 if score @s posY matches 0 if score @s posZ matches 1.. positioned ~-19 ~-19 ~1 run function gameify:custom_crafting_detection1 with entity @s
 execute as @s if score @s posX matches 0 if score @s posY matches 1.. if score @s posZ matches 1.. positioned ~-19 ~1 ~ run function gameify:custom_crafting_detection1 with entity @s
 execute as @s if score @s posX matches 1.. if score @s posY matches 1.. if score @s posZ matches 1.. positioned ~1 ~ ~ run function gameify:custom_crafting_detection1 with entity @s
+
+execute as @s if score @s posZ matches 0 run say a
