@@ -1,1 +1,1 @@
-execute as @s at @s positioned ~ ~1 ~ run setblock ~ ~ ~ bedrock
+execute as @s positioned ~ ~1 ~ run setblock ~ ~ ~ bedrock
