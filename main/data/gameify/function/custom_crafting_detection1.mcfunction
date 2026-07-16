@@ -1,4 +1,5 @@
 execute as @s if score @s posY matches 0 if score @s posX matches 0 run scoreboard players remove @s posZ 1
+execute as @s if score @s posY matches 0 if score @s posX matches 0 run say a
 execute as @s if score @s posY matches 0 if score @s posX matches 0 run scoreboard players set @s posY 20
 
 execute as @s if score @s posX matches 0 run scoreboard players remove @s posY 1
