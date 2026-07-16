@@ -20,7 +20,7 @@
             ],
             "minecraft:rarity": "uncommon",
             "minecraft:custom_data": {
-                "cut_diamond": true
+                "item_id": 1
             }
         }
     }
