@@ -16,6 +16,9 @@ execute as @e[scores={time=1},tag=!NoID] at @s run function gameify:id with enti
 
 execute as @e at @s store result score @s health run data get entity @s Health 10000
 
+execute if entity @e[tag=CustomCrafter] unless entity @e[tag=CustomHold] run summon armor_stand 0 -70 0 {Tags:["CustomHold"],Invisible:true,Marker:true,NoGravity:true}
+
+
 
 execute as @e[type=#skeletons,scores={time=1}] at @s run tag @s add Enhanced
 execute as @e[type=#skeletons,scores={time=1}] at @s run team join skeletons
