@@ -119,7 +119,7 @@ execute if score @s posZ matches 100 as @s at @s unless score @s posX = @e[tag=C
 
 execute as @e[tag=CustomHold] store result score @s posY run data get entity @s equipment.mainhand.components."minecraft:custom_data".result
 
-execute if score @s posZ matches 100 if score @s posY matches 1 run summon item ~ ~1 ~ {Item:{id:command_block,count:1,components:{custom_name:[{"text":"Perfect Diamond","italic":false,"color":"gold"}],lore:[[{"text":"Only through endless modification has it reached perfection...","italic":false,"color":"gray"}],[{"text":"Perhaps that says more about us than it does about it.","italic":false,"color":"gray"}]],rarity:uncommon,item_model:"minecraft:diamond_nautilus_armor",custom_data:{item_id:2b}}}}
+execute if score @s posZ matches 100 if score @e[tag=CustomHold,limit=1] posY matches 1 run summon item ~ ~1 ~ {Item:{id:command_block,count:1,components:{custom_name:[{"text":"Perfect Diamond","italic":false,"color":"gold"}],lore:[[{"text":"Only through endless modification has it reached perfection...","italic":false,"color":"gray"}],[{"text":"Perhaps that says more about us than it does about it.","italic":false,"color":"gray"}]],rarity:uncommon,item_model:"minecraft:diamond_nautilus_armor",custom_data:{item_id:2b}}}}
 
 # {Item:{id:command_block,count:1,components:{custom_name:[{"text":"Perfect Diamond","italic":false,"color":"gold"}],lore:[[{"text":"Only through endless modification has it reached perfection...","italic":false,"color":"gray"}],[{"text":"Perhaps that says more about us than it does about it.","italic":false,"color":"gray"}]],rarity:uncommon,item_model:"minecraft:diamond_nautilus_armor",custom_data:{item_id:2b}}}}
 
