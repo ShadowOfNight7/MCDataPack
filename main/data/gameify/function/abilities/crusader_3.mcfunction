@@ -32,7 +32,7 @@ execute as @e[tag=ArrowRaining2] at @s store result entity @s Pos[2] double 0.00
 execute as @e[tag=ArrowRaining2] at @s store result score @s random run random value 1..80
 execute as @e[tag=ArrowRaining2] at @s if score @s random matches 1 run tag @s add ArrowRainingLightning
 
-execute as @e[tag=ArrowRaining2] at @s store result score @s random run random value 1..180
+execute as @e[tag=ArrowRaining2] at @s store result score @s random run random value 1..240
 execute as @e[tag=ArrowRaining2] at @s if score @s random matches 1 run tag @s add ArrowRainingExplode
 
 

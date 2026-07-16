@@ -170,7 +170,7 @@ execute as @a[tag=Crusader] at @s run attribute @s max_health base set 30
 execute as @a[tag=!Crusader] at @s run attribute @s max_health base set 20
 
 execute as @e[tag=ArrowRainingLightning,nbt={inGround:true}] at @s run summon lightning_bolt ~ ~ ~
-execute as @e[tag=ArrowRainingExplode,nbt={inGround:true}] at @s run summon creeper ~ ~ ~ {Fuse:0}
+execute as @e[tag=ArrowRainingExplode,nbt={inGround:true}] at @s run summon creeper ~ ~-0.5 ~ {Fuse:0}
 execute as @e[tag=ArrowRaining,nbt={inGround:true}] at @s run kill @s
 
 
