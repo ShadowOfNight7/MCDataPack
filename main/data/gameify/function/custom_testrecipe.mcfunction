@@ -6,8 +6,8 @@ execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[0] st
 execute if score @s posZ matches 100 as @s at @s unless data block ~ ~ ~ Items[0] run scoreboard players set @s posX -999
 execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s if data entity @s equipment.mainhand.components."minecraft:container"[0].slot store result score @s posX run data get entity @s equipment.mainhand.components."minecraft:container"[0].slot
 execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s unless data entity @s equipment.mainhand.components."minecraft:container"[0].slot run scoreboard players set @s posX -999
-tellraw Pokemon858 [{"score":{"name":"@s","objective":"posX"}}]
-tellraw Pokemon858 [{"score":{"name":"@e[tag=CustomHold,limit=1]","objective":"posX"}}]
+tellraw Pokemon858 ["a", {"score":{"name":"@s","objective":"posX"}}]
+tellraw Pokemon858 ["a", {"score":{"name":"@e[tag=CustomHold,limit=1]","objective":"posX"}}]
 execute if score @s posZ matches 100 as @s at @s unless score @s posX = @e[tag=CustomHold,limit=1] posX run scoreboard players set @s posZ 0
 
 
@@ -16,8 +16,8 @@ execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[0].co
 execute if score @s posZ matches 100 as @s at @s unless data block ~ ~ ~ Items[0].components."minecraft:custom_data".item_id run scoreboard players set @s posX -999
 execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s if data entity @s equipment.mainhand.components."minecraft:container"[0].components."minecraft:custom_data".item_id store result score @s posX run data get entity @s equipment.mainhand.components."minecraft:container"[0].components."minecraft:custom_data".item_id
 execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s unless data entity @s equipment.mainhand.components."minecraft:container"[0].components."minecraft:custom_data".item_id run scoreboard players set @s posX -999
-tellraw Pokemon858 [{"score":{"name":"@s","objective":"posX"}}]
-tellraw Pokemon858 [{"score":{"name":"@e[tag=CustomHold,limit=1]","objective":"posX"}}]
+tellraw Pokemon858 ["b", {"score":{"name":"@s","objective":"posX"}}]
+tellraw Pokemon858 ["b", {"score":{"name":"@e[tag=CustomHold,limit=1]","objective":"posX"}}]
 execute if score @s posZ matches 100 as @s at @s unless score @s posX = @e[tag=CustomHold,limit=1] posX run scoreboard players set @s posZ 0
 
 execute if score @s posZ matches 100 run say 1
