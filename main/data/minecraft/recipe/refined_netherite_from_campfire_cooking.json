@@ -6,11 +6,10 @@
   "ingredient": "minecraft:netherite_block",
   "result": {
     "id": "minecraft:command_block",
-    "function": "minecraft:set_components",
     "components": {
       "minecraft:item_model": "minecraft:rib_armor_trim_smithing_template",
       "minecraft:item_name": {
-        "text": "Cooked Netherite Ingot",
+        "text": "Refined Netherite",
         "color": "gold",
         "italic": false
       },
@@ -28,7 +27,7 @@
       ],
       "minecraft:rarity": "uncommon",
       "minecraft:custom_data": {
-        "cooked_netherite_ingot": true
+        "refined_netherite": true
       }
     }
   }

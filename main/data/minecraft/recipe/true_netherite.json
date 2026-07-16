@@ -11,7 +11,7 @@
             "item": "minecraft:command_block",
             "components": {
                 "minecraft:custom_data": {
-                    "cooked_netherite_ingot": true
+                    "refined_netherite": true
                 }
             }
         },
@@ -48,7 +48,7 @@
                 "components": {
                     "minecraft:item_model": "minecraft:netherite_stair",
                     "minecraft:item_name": {
-                        "text": "True Netherite Block",
+                        "text": "True Netherite",
                         "color": "gold",
                         "italic": false
                     },
@@ -61,7 +61,7 @@
                     ],
                     "minecraft:rarity": "uncommon",
                     "minecraft:custom_data": {
-                        "true_netherite_block": true
+                        "true_netherite": true
                     }
                 }
             }
