@@ -1,5 +1,6 @@
 scoreboard players set @s posZ 100
 
+say a
 
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[0] store result score @s posX run data get entity @s Items[0].id
 execute if score @s posZ matches 100 as @s at @s unless data block ~ ~ ~ Items[0] run scoreboard players set @s posX -999
