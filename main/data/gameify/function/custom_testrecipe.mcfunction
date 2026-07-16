@@ -1,21 +1,16 @@
 scoreboard players set @s posZ 100
 
-say a
 
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[0] store result score @s posX run data get block ~ ~ ~ Items[0].Slot
 execute if score @s posZ matches 100 as @s at @s unless data block ~ ~ ~ Items[0] run scoreboard players set @s posX -999
 execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s if data entity @s equipment.mainhand.components."minecraft:container"[0].slot store result score @s posX run data get entity @s equipment.mainhand.components."minecraft:container"[0].slot
 execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s unless data entity @s equipment.mainhand.components."minecraft:container"[0].slot run scoreboard players set @s posX -999
-tellraw Pokemon858 ["a", {"score":{"name":"@s","objective":"posX"}}]
-tellraw Pokemon858 ["a", {"score":{"name":"@e[tag=CustomHold,limit=1]","objective":"posX"}}]
 execute if score @s posZ matches 100 as @s at @s unless score @s posX = @e[tag=CustomHold,limit=1] posX run scoreboard players set @s posZ 0
 
 execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[0].components."minecraft:custom_data".item_id store result score @s posX run data get block ~ ~ ~ Items[0].components."minecraft:custom_data".item_id
 execute if score @s posZ matches 100 as @s at @s unless data block ~ ~ ~ Items[0].components."minecraft:custom_data".item_id run scoreboard players set @s posX -999
 execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s if data entity @s equipment.mainhand.components."minecraft:container"[0].item.components."minecraft:custom_data".item_id store result score @s posX run data get entity @s equipment.mainhand.components."minecraft:container"[0].item.components."minecraft:custom_data".item_id
 execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s unless data entity @s equipment.mainhand.components."minecraft:container"[0].item.components."minecraft:custom_data".item_id run scoreboard players set @s posX -999
-tellraw Pokemon858 ["b", {"score":{"name":"@s","objective":"posX"}}]
-tellraw Pokemon858 ["b", {"score":{"name":"@e[tag=CustomHold,limit=1]","objective":"posX"}}]
 execute if score @s posZ matches 100 as @s at @s unless score @s posX = @e[tag=CustomHold,limit=1] posX run scoreboard players set @s posZ 0
 
 
@@ -122,4 +117,46 @@ execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s if data entity 
 execute if score @s posZ matches 100 as @e[tag=CustomHold] at @s unless data entity @s equipment.mainhand.components."minecraft:container"[8].item.components."minecraft:custom_data".item_id run scoreboard players set @s posX -999
 execute if score @s posZ matches 100 as @s at @s unless score @s posX = @e[tag=CustomHold,limit=1] posX run scoreboard players set @s posZ 0
 
-execute if score @s posZ matches 100 run summon item ~ ~1 ~ {Item:{id:command_block,count:1,components:{custom_name:[{"text":"Perfect Diamond","italic":false,"color":"gold"}],lore:[[{"text":"Only through endless modification has it reached perfection...","italic":false,"color":"gray"}],[{"text":"Perhaps that says more about us than it does about it.","italic":false,"color":"gray"}]],rarity:uncommon,item_model:"minecraft:diamond_nautilus_armor",custom_data:{item_id:2b}}}}
+execute as @e[tag=CustomHold] store result score @s posY run data get entity @s equipment.mainhand.components."minecraft:custom_data".result
+
+execute if score @s posZ matches 100 if score @s posY matches 1 run summon item ~ ~1 ~ {Item:{id:command_block,count:1,components:{custom_name:[{"text":"Perfect Diamond","italic":false,"color":"gold"}],lore:[[{"text":"Only through endless modification has it reached perfection...","italic":false,"color":"gray"}],[{"text":"Perhaps that says more about us than it does about it.","italic":false,"color":"gray"}]],rarity:uncommon,item_model:"minecraft:diamond_nautilus_armor",custom_data:{item_id:2b}}}}
+
+# {Item:{id:command_block,count:1,components:{custom_name:[{"text":"Perfect Diamond","italic":false,"color":"gold"}],lore:[[{"text":"Only through endless modification has it reached perfection...","italic":false,"color":"gray"}],[{"text":"Perhaps that says more about us than it does about it.","italic":false,"color":"gray"}]],rarity:uncommon,item_model:"minecraft:diamond_nautilus_armor",custom_data:{item_id:2b}}}}
+
+#Remove items
+
+execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[0] store result score @s posX run data get block ~ ~ ~ Items[0].count
+scoreboard players remove @s posX 1
+execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[0] store result block ~ ~ ~ Items[0].count byte 1 run scoreboard players get @s posX
+
+execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[1] store result score @s posX run data get block ~ ~ ~ Items[1].count
+scoreboard players remove @s posX 1
+execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[1] store result block ~ ~ ~ Items[1].count byte 1 run scoreboard players get @s posX
+
+execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[2] store result score @s posX run data get block ~ ~ ~ Items[2].count
+scoreboard players remove @s posX 1
+execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[2] store result block ~ ~ ~ Items[2].count byte 1 run scoreboard players get @s posX
+
+execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[3] store result score @s posX run data get block ~ ~ ~ Items[3].count
+scoreboard players remove @s posX 1
+execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[3] store result block ~ ~ ~ Items[3].count byte 1 run scoreboard players get @s posX
+
+execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[4] store result score @s posX run data get block ~ ~ ~ Items[4].count
+scoreboard players remove @s posX 1
+execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[4] store result block ~ ~ ~ Items[4].count byte 1 run scoreboard players get @s posX
+
+execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[5] store result score @s posX run data get block ~ ~ ~ Items[5].count
+scoreboard players remove @s posX 1
+execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[5] store result block ~ ~ ~ Items[5].count byte 1 run scoreboard players get @s posX
+
+execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[6] store result score @s posX run data get block ~ ~ ~ Items[6].count
+scoreboard players remove @s posX 1
+execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[6] store result block ~ ~ ~ Items[6].count byte 1 run scoreboard players get @s posX
+
+execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[7] store result score @s posX run data get block ~ ~ ~ Items[7].count
+scoreboard players remove @s posX 1
+execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[7] store result block ~ ~ ~ Items[7].count byte 1 run scoreboard players get @s posX
+
+execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[8] store result score @s posX run data get block ~ ~ ~ Items[8].count
+scoreboard players remove @s posX 1
+execute if score @s posZ matches 100 as @s at @s if data block ~ ~ ~ Items[8] store result block ~ ~ ~ Items[8].count byte 1 run scoreboard players get @s posX
