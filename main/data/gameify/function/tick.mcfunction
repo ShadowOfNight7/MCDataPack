@@ -227,3 +227,6 @@ execute as @a[tag=Alive] at @s run effect give @s slowness 1 4 true
 execute as @a[tag=Alive] at @s run effect give @s resistance 1 10 true
 execute as @a[tag=Alive] at @s run attribute @s jump_strength base set 0
 execute as @a[tag=!Alive] at @s run attribute @s jump_strength base reset
+
+
+execute as @e[tag=CustomCrafter] at @s run function gameify:custom_crafter_2 with entity @s
