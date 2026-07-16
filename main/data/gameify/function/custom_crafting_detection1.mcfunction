@@ -4,7 +4,7 @@ execute as @s if score @s posY matches 0 if score @s posX matches 0 run scoreboa
 execute as @s if score @s posX matches 0 run scoreboard players remove @s posY 1
 execute as @s if score @s posX matches 0 run scoreboard players set @s posX 5
 
-execute as @s if block ~ ~ ~ spawner{SpawnCount:0s} align xyz positioned ~0.5 ~ ~0.5 unless entity @e[tag=CustomCrafter,distance=..0.5] run summon armor_stand ~ ~ ~ {Tags:["CustomCrafter","CustomCrafterInitial"],NoGravity:true,Invisible:true}
+execute as @s if block ~ ~ ~ spawner{components:{"minecraft:custom_data":{custom_crafting:1}}} align xyz positioned ~0.5 ~ ~0.5 unless entity @e[tag=CustomCrafter,distance=..0.5] run summon armor_stand ~ ~ ~ {Tags:["CustomCrafter","CustomCrafterInitial"],NoGravity:true,Invisible:true}
 # setblock ~ ~ ~ bedrock
 
 execute as @s unless entity @e[tag=CustomCrafterInitial] run scoreboard players remove @s posX 1
