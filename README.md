@@ -13,12 +13,11 @@
 10. \[Reserved]
 11. pure_gold
 12. \[Reserved]
-13. heart_of_gold
+13. \[Reserved]
 14. cut_diamond
 15. perfect_diamond
 16. \[Reserved]
 17. refined_netherite
 18. true_netherite
 19. \[Reserved]
-20. \[Reserved]
 21. \[More to come...]
