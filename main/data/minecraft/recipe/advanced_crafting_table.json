@@ -16,7 +16,6 @@
   },
   "result": {
     "id": "minecraft:spawner",
-    "count": 1,
     "components": {
       "minecraft:custom_name": {
         "text": "Advanced Crafting Table",
@@ -24,7 +23,7 @@
       },
       "minecraft:lore": [
         {
-          "text": "Used to craft new items.",
+          "text": "A modified respawn anchor used to combine forgotten materials into unseen items",
           "color": "gray",
           "italic": false
         }
