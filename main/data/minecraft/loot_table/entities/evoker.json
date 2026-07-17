@@ -40,7 +40,7 @@
                                 ],
                                 "minecraft:rarity": "uncommon",
                                 "minecraft:custom_data": {
-                                    "soul_of_the_evoker": true
+                                    "item_id": 7
                                 }
                             }
                         }

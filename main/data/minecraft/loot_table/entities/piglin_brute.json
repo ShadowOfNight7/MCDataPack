@@ -40,7 +40,7 @@
                                 ],
                                 "minecraft:rarity": "uncommon",
                                 "minecraft:custom_data": {
-                                    "armor_of_the_damned": true
+                                    "item_id": 1
                                 }
                             }
                         }

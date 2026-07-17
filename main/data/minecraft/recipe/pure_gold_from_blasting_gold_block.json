@@ -21,7 +21,7 @@
             ],
             "minecraft:rarity": "uncommon",
             "minecraft:custom_data": {
-                "pure_gold": true
+                "item_id": 11
             }
         }
     }

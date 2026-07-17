@@ -27,7 +27,7 @@
       ],
       "minecraft:rarity": "uncommon",
       "minecraft:custom_data": {
-        "refined_netherite": true
+        "item_id": 17
       }
     }
   }

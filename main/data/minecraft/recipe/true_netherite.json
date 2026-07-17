@@ -54,7 +54,7 @@
                     },
                     "minecraft:lore": [
                         {
-                            "text": "It's missing a chunck in the corner, whatever, it still works",
+                            "text": "It's missing a chunk in the corner, whatever, it still works",
                             "color": "gray",
                             "italic": false
                         }

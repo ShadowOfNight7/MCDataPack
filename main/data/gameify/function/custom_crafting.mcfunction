@@ -1,10 +1,10 @@
 advancement revoke @s only gameify:placeblock
 
-scoreboard players set @s posX 5
-scoreboard players set @s posY 5
-scoreboard players set @s posZ 5
+scoreboard players set @s posX 6
+scoreboard players set @s posY 7
+scoreboard players set @s posZ 6
 
-execute as @s at @s positioned ^ ^ ^2.5 positioned ~-2.5 ~-2.5 ~-2.5 run function gameify:custom_crafting_detection1 with entity @s
+execute as @s at @s positioned ^ ^ ^3 positioned ~-3 ~-3.5 ~-3 run function gameify:custom_crafting_detection1 with entity @s
 
 
 execute as @e[tag=CustomCrafterInitial] at @s run fill ~ ~ ~ ~ ~ ~ dropper replace spawner

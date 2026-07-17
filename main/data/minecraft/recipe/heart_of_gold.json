@@ -11,13 +11,8 @@
             "item": "minecraft:piglin_head"
         },
         "G": {
-            "item": "minecraft:command_block",
-            "components": {
-                "minecraft:custom_data": {
-                    "pure_gold": true
-                }
+            "item": "minecraft:command_block"
             }
-        }
     },
     "result": {
         "id": "minecraft:command_block",
@@ -56,7 +51,7 @@
                     ],
                     "minecraft:rarity": "uncommon",
                     "minecraft:custom_data": {
-                        "heart_of_gold": true
+                        "item_id": 5
                     }
                 }
             }

@@ -40,7 +40,7 @@
                                 ],
                                 "minecraft:rarity": "uncommon",
                                 "minecraft:custom_data": {
-                                    "flesh_of_the_exiled": true
+                                    "item_id": 3
                                 }
                             }
                         }

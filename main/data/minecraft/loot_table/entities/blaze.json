@@ -40,7 +40,7 @@
                                 ],
                                 "minecraft:rarity": "uncommon",
                                 "minecraft:custom_data": {
-                                    "wing_of_the_condemned": true
+                                    "item_id": 4
                                 }
                             }
                         }

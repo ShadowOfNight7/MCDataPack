@@ -21,7 +21,7 @@
             ],
             "minecraft:rarity": "uncommon",
             "minecraft:custom_data": {
-                "steel_plate": true
+                "item_id": 8
             }
         }
     }

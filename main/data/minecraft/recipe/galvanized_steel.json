@@ -37,7 +37,7 @@
                     ],
                     "minecraft:rarity": "uncommon",
                     "minecraft:custom_data": {
-                        "galvanized_steel": true
+                        "item_id": 9
                     }
                 }
             }
