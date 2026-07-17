@@ -5,7 +5,7 @@
 2. eyes_of_greed
 3. flesh_of_the_exiled
 4. wing_of_the_condemned
-5. heart_of_gold
+5. \[Reserved Indefinitely]
 6. wing_of_the_banished
 7. soul_of_the_evoker
 8. steel_plate
@@ -13,7 +13,7 @@
 10. \[Reserved]
 11. pure_gold
 12. \[Reserved]
-13. \[Reserved]
+13. heart_of_gold
 14. cut_diamond
 15. perfect_diamond
 16. \[Reserved]
