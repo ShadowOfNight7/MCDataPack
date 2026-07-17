@@ -1,4 +1,5 @@
-# MCResourcePack
+# MCDataPack
+
 
 ## Custom Item IDs
 1. armor_of_the_damned
@@ -21,3 +22,9 @@
 18. true_netherite
 19. \[Reserved]
 21. \[More to come...]
+
+## Accompanying Resource Pack
+A selection of slight changes in the form of a companion resource pack.
+It includes the following:
+- Vanilla Tweaks' HD Shield Banner Patterns
+- Vanilla Tweaks' Golden Crown
