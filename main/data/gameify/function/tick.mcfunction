@@ -168,6 +168,9 @@ execute as @e[tag=FlagHitbox] at @s run function gameify:abilities/emperor_2 wit
 execute as @e[tag=FlagText] at @s run data merge entity @s {Tags:["FlagText"],billboard:"center",default_background:0b,text:[{"color":"dark_red","shadow_color":13893632,"text":"Health: "},{"color":"dark_red","score":{"name":"@e[tag=FlagHitbox,limit=1,sort=nearest]","objective":"flagHealth"},"shadow_color":13893632}]}
 
 
+execute as @e[tag=Emperor] at @s run item replace entity @s armor.head with golden_helmet[custom_name=[{"text":"Emperor's Crown","italic":false,"color":"gold"}],lore=[[{"text":"Represents almightly power.","italic":false,"color":"gray"}]],enchantments={aqua_affinity:1,binding_curse:1,blast_protection:5,fire_protection:5,projectile_protection:5,protection:10,respiration:5,thorns:5,vanishing_curse:1},attribute_modifiers=[{type:armor,amount:20,slot:head,operation:add_value,id:"1784266748339"},{type:armor_toughness,amount:10,slot:head,operation:add_value,id:"1784266748340"},{type:knockback_resistance,amount:1,slot:head,operation:add_value,id:"1784266748341"},{type:luck,amount:10,slot:head,operation:add_value,id:"1784266748342"},{type:explosion_knockback_resistance,amount:1,slot:head,operation:add_value,id:"1784266748343"}],unbreakable={},tooltip_display={hidden_components:[attribute_modifiers,can_break,can_place_on,unbreakable]}]
+
+
 #Crusader
 execute as @a[tag=Crusader] at @s run attribute @s max_health base set 30
 execute as @a[tag=!Crusader] at @s run attribute @s max_health base set 20
