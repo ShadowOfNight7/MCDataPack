@@ -225,6 +225,7 @@ execute if score @s posZ matches 100 if score @e[tag=CustomHold,limit=1] posY ma
 execute if score @s posZ matches 100 if score @e[tag=CustomHold,limit=1] posY matches 3 run summon item ~ ~1 ~ {Motion:[0d,0.3d,0d],Item:{id:command_block,count:1,components:{custom_name:[{"text":"True Netherite","italic":false,"color":"gold"}],lore:[[{"text":"It's missing a chunk in the corner. Whatever, it still works.","italic":false,"color":"gray"}]],rarity:uncommon,item_model:"minecraft:dragon_egg",custom_data:{item_id:18b}}}}
 execute if score @s posZ matches 100 if score @e[tag=CustomHold,limit=1] posY matches 4 run summon item ~ ~1 ~ {Motion:[0d,0.3d,0d],Item:{id:command_block,count:1,components:{custom_name:[{"text":"Galvanized Steel","italic":false,"color":"gold"}],lore:[[{"text":"Why is it galvanized? I have no idea, it's not like iron rusts in this game.","italic":false,"color":"gray"}]],rarity:uncommon,item_model:"minecraft:lodestone",custom_data:{item_id:9b}}}}
 execute if score @s posZ matches 100 if score @e[tag=CustomHold,limit=1] posY matches 5 run summon item ~ ~1 ~ {Motion:[0d,0.3d,0d],Item:{id:totem_of_undying,count:1,components:{lore:[[{"text":"Shall its death have been in vain? Only time will tell...","italic":false,"color":"gray"}]]}}}
+execute if score @s posZ matches 100 if score @e[tag=CustomHold,limit=1] posY matches 6 run summon item ~ ~1 ~ {Motion:[0d,0.3d,0d],Item:{id:anvil,count:1}}
 
 execute if score @s posZ matches 100 run particle reverse_portal ~ ~0.75 ~ 0.05 0.05 0.05 0.5 100 normal
 

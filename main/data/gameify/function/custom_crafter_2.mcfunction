@@ -13,7 +13,10 @@ execute as @s at @s run function gameify:custom_testrecipe with entity @s
 
 execute as @s at @s run item replace entity @e[tag=CustomHold] weapon.mainhand with dropper[custom_data={result:5b},container=[{slot:0,item:{id:"minecraft:command_block",components:{"minecraft:custom_data":{item_id:1b}}}},{slot:1,item:{id:"minecraft:command_block",components:{"minecraft:custom_data":{item_id:2b}}}},{slot:2,item:{id:"minecraft:command_block",components:{"minecraft:custom_data":{item_id:3b}}}},{slot:3,item:{id:"minecraft:command_block",components:{"minecraft:custom_data":{item_id:4b}}}},{slot:4,item:{id:"minecraft:command_block",components:{"minecraft:custom_data":{item_id:13b}}}},{slot:5,item:{id:"minecraft:command_block",components:{"minecraft:custom_data":{item_id:6b}}}},{slot:7,item:{id:"minecraft:command_block",components:{"minecraft:custom_data":{item_id:7b}}}}]]
 execute as @s at @s run function gameify:custom_testrecipe with entity @s
-  
+
+execute as @s at @s run item replace entity @e[tag=CustomHold] weapon.mainhand with dropper[custom_data={result:6b},container=[{slot:0,item:{id:"minecraft:command_block",components:{"minecraft:custom_data":{item_id:9b}}}},{slot:1,item:{id:"minecraft:command_block",components:{"minecraft:custom_data":{item_id:9b}}}},{slot:2,item:{id:"minecraft:command_block",components:{"minecraft:custom_data":{item_id:9b}}}},{slot:4,item:{id:"minecraft:command_block",components:{"minecraft:custom_data":{item_id:8b}}}},{slot:6,item:{id:"minecraft:command_block",components:{"minecraft:custom_data":{item_id:8b}}}},{slot:7,item:{id:"minecraft:command_block",components:{"minecraft:custom_data":{item_id:8b}}}},{slot:8,item:{id:"minecraft:command_block",components:{"minecraft:custom_data":{item_id:8b}}}}]]
+execute as @s at @s run function gameify:custom_testrecipe with entity @s
+
 
 #execute as @s at @s run item replace entity @e[tag=CustomHold] weapon.mainhand with dropper[custom_data={result:2b},container=[{slot:0,item:{id:"minecraft:command_block",components:{"minecraft:custom_data":{item_id:1b}}}}]]
 
