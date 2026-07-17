@@ -3,11 +3,11 @@
   "key": {
     "D": "minecraft:diamond_block",
     "N": "minecraft:netherite_block",
-    "S": "minecraft:netherite_upgrade_smithing_template"
+    "U": "minecraft:netherite_upgrade_smithing_template"
   },
   "pattern": [
     "DND",
-    "NSN",
+    "NUN",
     "DND"
   ],
   "result": {
