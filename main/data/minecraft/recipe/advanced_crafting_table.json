@@ -1,7 +1,11 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
-  "pattern": ["WAO", "ANA", "DRD"],
+  "pattern": [
+    "WAO",
+    "ANA",
+    "DRD"
+  ],
   "key": {
     "W": "minecraft:wither_rose",
     "A": "minecraft:amethyst_cluster",
@@ -18,7 +22,6 @@
         "text": "Advanced Crafting Table",
         "italic": false
       },
-
       "minecraft:lore": [
         {
           "text": "Used to craft new items.",
@@ -26,17 +29,14 @@
           "italic": false
         }
       ],
-
       "minecraft:custom_data": {
         "custom_crafting": 1
       },
-
       "minecraft:block_entity_data": {
         "id": "minecraft:mob_spawner",
         "SpawnCount": 0,
         "SpawnRange": 0
       },
-
       "minecraft:tooltip_display": {
         "hidden_components": [
           "minecraft:attribute_modifiers",
