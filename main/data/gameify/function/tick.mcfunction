@@ -14,6 +14,8 @@ execute as @a at @s if score @s lives matches ..0 run gamemode adventure @s
 
 execute as @e[scores={time=1},tag=!NoID] at @s run function gameify:id with entity @s
 
+execute as @a at @s unless score @s id = @s id run function gameify:id with entity s
+
 execute as @e at @s store result score @s health run data get entity @s Health 10000
 
 execute if entity @e[tag=CustomCrafter] unless entity @e[tag=CustomHold] run summon armor_stand 0 -70 0 {Tags:["CustomHold"],Invisible:true,Marker:true,NoGravity:true}
