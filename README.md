@@ -5,7 +5,7 @@
 2. eyes_of_greed
 3. flesh_of_the_exiled
 4. wing_of_the_condemned
-5. heart_of_gold
+5. \[Reserved Indefinitely]
 6. wing_of_the_banished
 7. soul_of_the_evoker
 8. steel_plate
@@ -20,5 +20,4 @@
 17. refined_netherite
 18. true_netherite
 19. \[Reserved]
-20. \[Reserved]
 21. \[More to come...]
