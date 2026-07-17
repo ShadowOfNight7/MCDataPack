@@ -7,4 +7,12 @@
     ],
     "max_format": 107
   }
+   "filter": {
+    "block": [
+      {
+        "namespace": "minecraft",
+        "path": "recipe/anvil.json"
+      }
+    ]
+  }
 }
