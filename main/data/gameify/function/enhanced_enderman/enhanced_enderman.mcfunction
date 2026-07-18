@@ -1,5 +1,6 @@
 execute as @s at @s on target run tag @s add EndermanTarget
 execute as @s at @s unless entity @e[tag=EndermanTarget] if entity @p[distance=..7,gamemode=!creative,gamemode=!spectator] run damage @s 0 magic by @p[distance=..7,gamemode=!creative,gamemode=!spectator]
+execute as @s[scores={time=1}] at @s run scoreboard players set @s random 0
 
 # execute as @s[nbt={HurtTime:9s}] at @s run damage @s 0 arrow
 execute as @s at @s if score @s time matches 200.. run damage @s 0 arrow
@@ -11,7 +12,9 @@ execute as @p[tag=EndermanTarget,distance=..3.65] at @s run effect give @s blind
 execute as @s at @s run damage @p[tag=EndermanTarget,distance=..3.65] 0.6 magic by @s from @s
 tag @e[tag=EndermanTarget] remove EndermanTarget
 
-execute as @s at @s run fill ~-1 ~ ~-1 ~1 ~3 ~1 air replace water
+execute as @s at @s if entity @e[tag=EndermanTarget] run scoreboard players add @s random 1
+execute as @s[nbt={HurtTime:9s}] at @s if entity @e[tag=EndermanTarget] run scoreboard players set @s random 0
+execute as @s[scores={random=200..}] at @s run fill ~-1 ~ ~-1 ~1 ~3 ~1 air replace water
 
 
 execute as @s at @s on vehicle if entity @s[type=#boat] run kill @s
