@@ -14,7 +14,7 @@ execute as @a at @s if score @s lives matches ..0 run gamemode adventure @s
 
 execute as @e[scores={time=1},tag=!NoID] at @s run function gameify:id with entity @s
 
-execute as @a at @s unless score @s id = @s id run function gameify:id with entity s
+execute as @a at @s unless score @s id = @s id run function gameify:id with entity @s
 
 execute as @e at @s store result score @s health run data get entity @s Health 10000
 
@@ -43,6 +43,7 @@ execute as @e[tag=Clone] at @s unless predicate gameify:creeper_dead run kill @s
 execute as @e[type=area_effect_cloud,nbt={potion_contents:{custom_effects:[{id:"minecraft:unluck",amplifier:10b}]}}] at @s run summon creeper ~ ~ ~ {Tags:["Cloned"]}
 execute as @e[type=area_effect_cloud,nbt={potion_contents:{custom_effects:[{id:"minecraft:unluck",amplifier:10b}]}}] at @s run kill @s
 
+execute as @e[type=#sensitive_to_bane_of_arthropods] at @s run function gameify:enhanced_spider/enhanced_spider with entity @s
 
 
 execute as @e[scores={cooldown=1..}] at @s run scoreboard players remove @s cooldown 1
