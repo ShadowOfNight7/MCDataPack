@@ -12,3 +12,6 @@ execute as @s[scores={time=1}] at @s run attribute @s step_height base set 1.5
 execute as @s[scores={time=1},tag=!SummonedSpider] at @s run attribute @s max_health base set 20
 execute as @s[scores={time=1},tag=!SummonedSpider] at @s run effect give @s instant_health 1 100 true
 execute as @s[scores={time=1}] run scoreboard players set @s random 0
+
+execute as @s at @s on vehicle if entity @s[type=#boat] run kill @s
+execute as @s at @s on vehicle if entity @s[type=minecart] run kill @s

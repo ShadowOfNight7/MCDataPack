@@ -16,3 +16,6 @@ execute as @s[scores={time=1}] run team join creepers @s
 effect give @s unluck 1 10 true
 
 execute as @s at @s run kill @e[type=arrow,distance=..3,tag=!Homing,tag=!Fast,tag=!Teleport]
+
+execute as @s at @s on vehicle if entity @s[type=#boat] run kill @s
+execute as @s at @s on vehicle if entity @s[type=minecart] run kill @s

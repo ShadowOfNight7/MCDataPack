@@ -15,3 +15,6 @@ execute as @s[scores={time=300},nbt={Fire:0s}] at @s run effect give @e[type=cre
 execute as @s[scores={time=300},nbt={Fire:0s}] at @s run scoreboard players set @s time 100
 
 execute as @s[scores={health=..100000}] at @s run attribute @s attack_damage base set 5
+
+execute as @s at @s on vehicle if entity @s[type=#boat] run kill @s
+execute as @s at @s on vehicle if entity @s[type=minecart] run kill @s
