@@ -10,3 +10,6 @@ execute as @s at @s if score @s time matches 200.. run scoreboard players set @s
 execute as @p[tag=EndermanTarget,distance=..3.65] at @s run effect give @s blindness 2 0 false
 execute as @s at @s run damage @p[tag=EndermanTarget,distance=..3.65] 0.6 magic by @s from @s
 tag @e[tag=EndermanTarget] remove EndermanTarget
+
+execute as @s at @s on vehicle if entity @s[type=#boat] run kill @s
+execute as @s at @s on vehicle if entity @s[type=minecart] run kill @s
