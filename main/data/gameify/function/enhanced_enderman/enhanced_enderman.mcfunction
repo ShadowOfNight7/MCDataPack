@@ -11,7 +11,7 @@ execute as @p[tag=EndermanTarget,distance=..3.65] at @s run effect give @s blind
 execute as @s at @s run damage @p[tag=EndermanTarget,distance=..3.65] 0.6 magic by @s from @s
 tag @e[tag=EndermanTarget] remove EndermanTarget
 
-execute as @s at @s run fill ~-2 ~ ~-2 ~2 ~3 ~2 air replace water
+execute as @s at @s run fill ~-1 ~ ~-1 ~1 ~3 ~1 air replace water
 
 
 execute as @s at @s on vehicle if entity @s[type=#boat] run kill @s
