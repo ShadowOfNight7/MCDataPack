@@ -14,4 +14,4 @@ execute as @s[scores={time=300}] at @s run effect give @e[type=#sensitive_to_ban
 execute as @s[scores={time=300}] at @s run effect give @e[type=creeper,distance=..5] instant_health 1 0 true
 execute as @s[scores={time=300}] at @s run scoreboard players set @s time 100
 
-execute as @s[scores={health=..100000}] at @s run attribute @s attack_damage base set 7
+execute as @s[scores={health=..100000}] at @s run attribute @s attack_damage base set 5
