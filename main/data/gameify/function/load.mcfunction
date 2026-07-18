@@ -25,6 +25,9 @@ scoreboard objectives add health dummy
 
 team add skeletons
 team modify skeletons friendlyFire false
+team add creepers
+team modify creepers friendlyFire false
+
 
 
 team add Golden 'Golden Empire'

@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "PlayerHurt": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "entity_type": "#minecraft:zombies"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "gameify:enhanced_zombie/zombiebuff"
+  }
+}
