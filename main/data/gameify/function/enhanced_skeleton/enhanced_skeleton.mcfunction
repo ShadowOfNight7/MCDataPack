@@ -8,3 +8,6 @@ execute as @e[type=arrow,tag=Teleport,scores={time=1}] at @s on origin if entity
 execute as @e[type=arrow,tag=Teleport,scores={time=1}] at @s on origin if entity @s[tag=TeleportSkeleton] as @e[tag=TeleportationSkeleton,sort=random] at @s if score @s id = @e[tag=TeleportSkeleton,limit=1] id run tp @e[tag=TeleportSkeleton] @s
 tag @s remove TeleportSkeleton
 tag @e[tag=NotTimed] remove NotTimed
+
+execute as @s at @s on vehicle if entity @s[type=#boat] run kill @s
+execute as @s at @s on vehicle if entity @s[type=minecart] run kill @s

@@ -45,6 +45,8 @@ execute as @e[type=area_effect_cloud,nbt={potion_contents:{custom_effects:[{id:"
 
 execute as @e[type=#sensitive_to_bane_of_arthropods] at @s run function gameify:enhanced_spider/enhanced_spider with entity @s
 
+execute as @e[type=enderman] at @s run function gameify:enhanced_enderman/enhanced_enderman with entity @s
+
 
 execute as @e[scores={cooldown=1..}] at @s run scoreboard players remove @s cooldown 1
 execute as @e[scores={cooldown2=1..}] at @s run scoreboard players remove @s cooldown2 1
