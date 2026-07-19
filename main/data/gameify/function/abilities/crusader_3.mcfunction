@@ -2,7 +2,7 @@ execute as @s at @s run summon arrow ~ ~30 ~ {Tags:["ArrowRaining","ArrowRaining
 execute as @s at @s run summon arrow ~ ~27 ~ {Tags:["ArrowRaining","ArrowRaining2"],Motion:[0d,-3.5d,0d]}
 
 execute as @e[tag=ArrowRaining2] at @s store result score @s random run random value 1..45
-execute as @e[tag=ArrowRaining2] at @s if score @s random matches 1 run summon fireball ~ ~ ~ {Tags:["ArrowRaining","ArrowRaining2"],Motion:[0d,-2.5d,0d]}
+execute as @e[tag=ArrowRaining2] at @s if score @s random matches 1 run summon small_fireball ~ ~ ~ {Tags:["ArrowRaining","ArrowRaining2"],Motion:[0d,-2.5d,0d]}
 execute as @e[tag=ArrowRaining2] at @s if score @s random matches 1 run kill @s
 
 execute as @e[tag=ArrowRaining2,type=arrow] at @s store result score @s random run random value 1..5
@@ -32,12 +32,12 @@ execute as @e[tag=ArrowRaining2] at @s store result entity @s Pos[2] double 0.00
 execute as @e[tag=ArrowRaining2] at @s store result score @s random run random value 1..80
 execute as @e[tag=ArrowRaining2] at @s if score @s random matches 1 run tag @s add ArrowRainingLightning
 
-execute as @e[tag=ArrowRaining2] at @s store result score @s random run random value 1..240
-execute as @e[tag=ArrowRaining2] at @s if score @s random matches 1 run tag @s add ArrowRainingExplode
+# execute as @e[tag=ArrowRaining2] at @s store result score @s random run random value 1..240
+# execute as @e[tag=ArrowRaining2] at @s if score @s random matches 1 run tag @s add ArrowRainingExplode
 
 
 tag @e[tag=ArrowRaining2] remove ArrowRaining2
 
-
+execute as @s at @s as @a[distance=..36] at @s run effect give @s slowness 1 2 true
 
 kill @s[scores={time=620..}]

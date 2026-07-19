@@ -1,4 +1,4 @@
-scoreboard players set @s cooldown 3600
+scoreboard players set @s cooldown 4000
 
 execute as @s at @s rotated ~ 0 positioned ^ ^ ^25 run summon armor_stand ~ ~ ~ {Tags:["ArrowRain","ArrowRain2"],Marker:true,Invisible:true}
 execute as @s at @s rotated ~ 0 positioned ^ ^ ^25 run summon armor_stand ~ ~ ~ {Tags:["ArrowRain","ArrowRain2"],Marker:true,Invisible:true}

@@ -1,3 +1,7 @@
+execute as @s[scores={time=1}] at @s store result score @s random run random value 1..100
+execute as @s[scores={time=1,random=1..5}] at @s run summon slime ~ ~ ~
+execute as @s[scores={time=1,random=1..5}] at @s run tp @s ~ -100 ~
+
 execute as @s[scores={time=1}] at @s run attribute @s max_health base set 30
 execute as @s[scores={time=1}] at @s run effect give @s instant_damage 1 10 true
 execute as @s[scores={time=1}] at @s run data merge entity @s {equipment:{offhand:{id:"minecraft:rotten_flesh",count:1,components:{"item_model":"minecraft:air","death_protection":{},"enchantments":{"vanishing_curse":1}}}}}

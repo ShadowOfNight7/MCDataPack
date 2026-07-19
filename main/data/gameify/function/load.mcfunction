@@ -20,6 +20,8 @@ scoreboard objectives add lives dummy
 
 scoreboard objectives add health dummy
 
+scoreboard objectives add clock dummy
+
 
 
 
