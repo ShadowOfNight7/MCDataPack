@@ -3,15 +3,15 @@
   "category": "equipment",
   "key": {
     "#": "minecraft:stick",
-    "x": "minecraft:copper_ingot",
-    "X": "#minecraft:copper_tool_materials"
+    "x": "#minecraft:iron_tool_materials",
+    "X": "minecraft:iron_block"
   },
   "pattern": [
-    "xXx",
-    " # ",
-    " # "
+    "X",
+    "#",
+    "#"
   ],
   "result": {
-    "id": "minecraft:copper_pickaxe"
+    "id": "minecraft:iron_shovel"
   }
 }

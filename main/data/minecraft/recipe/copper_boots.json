@@ -2,11 +2,10 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "x": "minecraft:copper_ingot",
-    "X": "#minecraft:copper_tool_materials"
+    "x": "#minecraft:copper_tool_materials"
   },
   "pattern": [
-    "X X",
+    "x x",
     "x x"
   ],
   "result": {

@@ -1,6 +1,6 @@
 {
   "replace": true,
   "values": [
-    "minecraft:gold_block"
+    "minecraft:gold_ingot"
   ]
 }

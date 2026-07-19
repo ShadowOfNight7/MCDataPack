@@ -2,11 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "X": "#minecraft:iron_tool_materials"
+    "x": "#minecraft:iron_tool_materials",
+    "X": "minecraft:iron_block"
   },
   "pattern": [
-    "XXX",
-    "X X"
+    "XxX",
+    "x x"
   ],
   "result": {
     "id": "minecraft:iron_helmet"

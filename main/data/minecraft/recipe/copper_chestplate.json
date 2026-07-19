@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "x": "minecraft:copper_ingot",
-    "X": "#minecraft:copper_tool_materials"
+    "X": "minecraft:copper_block",
+    "x": "#minecraft:copper_tool_materials"
   },
   "pattern": [
     "x x",
     "xXx",
-    "XXX"
+    "xxx"
   ],
   "result": {
     "id": "minecraft:copper_chestplate"
