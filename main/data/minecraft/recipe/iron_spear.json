@@ -2,14 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "x": "#minecraft:iron_tool_materials",
+    "#": "minecraft:stick",
     "X": "minecraft:iron_block"
   },
   "pattern": [
-    "X X",
-    "x x"
+    "  X",
+    " # ",
+    "#  "
   ],
   "result": {
-    "id": "minecraft:iron_boots"
+    "id": "minecraft:iron_spear"
   }
 }

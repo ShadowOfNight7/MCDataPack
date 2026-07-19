@@ -2,12 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "X": "#minecraft:gold_tool_materials"
+    "x": "#minecraft:iron_tool_materials",
+    "X": "minecraft:iron_block"
   },
   "pattern": [
     "XXX",
-    "X X",
-    "X X"
+    "x x",
+    "x x"
   ],
   "result": {
     "id": "minecraft:iron_leggings"

@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "X": "#minecraft:copper_tool_materials"
+    "x": "#minecraft:copper_tool_materials"
   },
   "pattern": [
-    "X X",
-    "X X"
+    "x x",
+    "x x"
   ],
   "result": {
     "id": "minecraft:copper_boots"
