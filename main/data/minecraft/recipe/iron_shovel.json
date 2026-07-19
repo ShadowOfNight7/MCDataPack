@@ -3,7 +3,6 @@
   "category": "equipment",
   "key": {
     "#": "minecraft:stick",
-    "x": "#minecraft:iron_tool_materials",
     "X": "minecraft:iron_block"
   },
   "pattern": [
