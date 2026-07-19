@@ -12,6 +12,11 @@
     " #"
   ],
   "result": {
-    "id": "minecraft:iron_axe"
+    "id": "minecraft:iron_axe",
+    "components": {
+      "use_remainder": {
+        "id": "iron_block"
+      }
+    }
   }
 }
