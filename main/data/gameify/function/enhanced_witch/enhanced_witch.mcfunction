@@ -26,7 +26,7 @@ execute as @s at @s if score @s posX matches 800.. run scoreboard players set @s
 execute as @s at @s as @e[type=bat,distance=..8] at @s run effect give @s glowing 1 0 true
 
 tag @s remove WitchMarker
-tag @s remove WitchTarget
+tag @e remove WitchTarget
 
 
 execute as @s[scores={time=1}] at @s run attribute @s max_health base set 50
