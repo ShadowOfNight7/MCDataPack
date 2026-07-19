@@ -15,7 +15,7 @@
     "id": "minecraft:iron_axe",
     "components": {
       "use_remainder": {
-        "id": "iron_block"
+        "id": "minecraft:iron_block"
       }
     }
   }
