@@ -1,0 +1,3 @@
+execute as @s[scores={time=1}] at @s run data merge entity @s {equipment:{mainhand:{id:"minecraft:crossbow",count:1,components:{"minecraft:enchantments":{"minecraft:multishot":2,"minecraft:vanishing_curse":1,"minecraft:quick_charge":2,"minecraft:punch":2}}}}}
+execute as @s[scores={time=1}] at @s run attribute @s follow_range base set 50
+execute as @s[scores={time=1}] at @s run attribute @s armor base set 5

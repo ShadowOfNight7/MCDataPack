@@ -1,0 +1,1 @@
+execute as @s[nbt={HurtTime:9s}] at @s run summon vex ~ ~1 ~ {equipment:{mainhand:{id:"minecraft:iron_sword",count:1,components:{"enchantments":{"vanishing_curse":1}}}},Health:10f}

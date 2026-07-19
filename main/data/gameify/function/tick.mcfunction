@@ -51,6 +51,13 @@ execute as @e[type=endermite] at @s run function gameify:enhanced_silverfish/enh
 execute as @e[type=slime] at @s run function gameify:enhanced_slime/enhanced_slime with entity @s
 execute as @e[type=magma_cube] at @s run function gameify:enhanced_slime/enhanced_slime with entity @s
 execute as @e[type=witch] at @s run function gameify:enhanced_witch/enhanced_witch with entity @s
+execute as @e[type=breeze] at @s run function gameify:enhanced_breeze/enhanced_breeze with entity @s
+
+execute as @e[type=pillager] at @s run function gameify:enhanced_pillager/enhanced_pillager with entity @s
+execute as @e[type=ravager] at @s run function gameify:enhanced_ravager/enhanced_ravager with entity @s
+kill @e[tag=ClonedVex,scores={time=200}]
+execute as @e[type=evoker] at @s run function gameify:enhanced_evoker/enhanced_evoker with entity @s
+execute as @e[type=vindicator] at @s run function gameify:enhanced_vindicator/enhanced_vindicator with entity @s
 
 
 execute as @e[scores={cooldown=1..}] at @s run scoreboard players remove @s cooldown 1
