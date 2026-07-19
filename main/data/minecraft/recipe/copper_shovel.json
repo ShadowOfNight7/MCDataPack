@@ -2,15 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
+    "#": "minecraft:stick",
     "x": "minecraft:copper_ingot",
     "X": "#minecraft:copper_tool_materials"
   },
   "pattern": [
-    "XXX",
-    "x x",
-    "x x"
+    "X",
+    "#",
+    "#"
   ],
   "result": {
-    "id": "minecraft:copper_leggings"
+    "id": "minecraft:copper_shovel"
   }
 }
