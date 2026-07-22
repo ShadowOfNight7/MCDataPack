@@ -55,9 +55,46 @@ execute as @e[type=breeze] at @s run function gameify:enhanced_breeze/enhanced_b
 
 execute as @e[type=pillager] at @s run function gameify:enhanced_pillager/enhanced_pillager with entity @s
 execute as @e[type=ravager] at @s run function gameify:enhanced_ravager/enhanced_ravager with entity @s
-kill @e[tag=ClonedVex,scores={time=200}]
+kill @e[tag=ClonedVex,scores={time=160..}]
 execute as @e[type=evoker] at @s run function gameify:enhanced_evoker/enhanced_evoker with entity @s
 execute as @e[type=vindicator] at @s run function gameify:enhanced_vindicator/enhanced_vindicator with entity @s
+
+execute as @e[type=creaking] at @s run function gameify:enhanced_creaking/enhanced_creaking with entity @s
+
+execute as @e[type=guardian] at @s run function gameify:enhanced_guardian/enhanced_guardian with entity @s
+
+execute as @e[type=blaze] at @s run function gameify:enhanced_blaze/enhanced_blaze with entity @s
+execute as @e[type=small_fireball,tag=SummonedByBlaze,scores={time=14..}] at @s run function gameify:enhanced_blaze/enhanced_fireball with entity @s
+execute as @e[tag=SummonedByBlaze] at @s unless entity @e[type=blaze,distance=..20] run kill @s
+kill @e[tag=SummonedSmallFireball,scores={time=40..}]
+execute as @e[type=wither_skeleton] at @s run function gameify:enhanced_wither_skeleton/enhanced_wither_skeleton with entity @s
+execute as @e[type=piglin] at @s run effect give @s speed infinite 1 true
+execute as @e[type=zombified_piglin] at @s run effect give @s speed infinite 1 true
+execute as @e[type=hoglin] at @s run effect give @s strength infinite 1 true
+execute as @e[type=zoglin] at @s run effect give @s strength infinite 1 true
+execute as @e[type=piglin_brute] at @s run effect give @s strength infinite 0 true
+execute as @e[type=piglin_brute] at @s run effect give @s speed infinite 0 true
+execute as @e[type=piglin_brute,scores={time=1}] at @s run attribute @s max_health base set 50
+execute as @e[type=piglin_brute,scores={time=1}] at @s run effect give @s instant_health 1 10 true
+execute as @e[type=ghast] at @s run function gameify:enhanced_ghast/enhanced_ghast with entity @s
+
+effect give @e[type=shulker] resistance infinite 2 true
+execute as @e[type=shulker] at @s run kill @e[type=arrow,distance=..8]
+execute as @e[type=shulker] at @s as @a[distance=..10,nbt={active_effects:[{id:"minecraft:levitation"}]},nbt=!{active_effects:[{id:"minecraft:levitation",amplifier:1b}]}] at @s run effect give @s levitation 10 1 false
+execute as @e[type=shulker_bullet,scores={time=1},tag=!ClonedShulkerBullet] at @s run summon shulker_bullet ~ ~ ~ {Tags:["ClonedShulkerBullet"],Motion:[0.1d,0.7d,0d],HasBeenShot:1b}
+execute as @e[type=shulker_bullet,scores={time=1},tag=!ClonedShulkerBullet] at @s run summon shulker_bullet ~ ~ ~ {Tags:["ClonedShulkerBullet"],Motion:[-0.1d,0.7d,0d],HasBeenShot:1b}
+execute as @e[type=shulker_bullet,scores={time=1},tag=!ClonedShulkerBullet] at @s run summon shulker_bullet ~ ~ ~ {Tags:["ClonedShulkerBullet"],Motion:[0d,0.7d,0.1d],HasBeenShot:1b}
+execute as @e[type=shulker_bullet,scores={time=1},tag=!ClonedShulkerBullet] at @s run summon shulker_bullet ~ ~ ~ {Tags:["ClonedShulkerBullet"],Motion:[0d,0.7d,-0.1d],HasBeenShot:1b}
+execute as @e[type=shulker_bullet,scores={time=1},tag=!ClonedShulkerBullet] at @s run summon shulker_bullet ~ ~ ~ {Tags:["ClonedShulkerBullet"],Motion:[0.1d,0.7d,0.1d],HasBeenShot:1b}
+execute as @e[type=shulker_bullet,scores={time=1},tag=!ClonedShulkerBullet] at @s run summon shulker_bullet ~ ~ ~ {Tags:["ClonedShulkerBullet"],Motion:[0.1d,0.7d,-0.1d],HasBeenShot:1b}
+execute as @e[type=shulker_bullet,scores={time=1},tag=!ClonedShulkerBullet] at @s run summon shulker_bullet ~ ~ ~ {Tags:["ClonedShulkerBullet"],Motion:[-0.1d,0.7d,0.1d],HasBeenShot:1b}
+execute as @e[type=shulker_bullet,scores={time=1},tag=!ClonedShulkerBullet] at @s run summon shulker_bullet ~ ~ ~ {Tags:["ClonedShulkerBullet"],Motion:[-0.1d,0.7d,-0.1d],HasBeenShot:1b}
+execute as @e[tag=ClonedShulkerBullet] at @s if entity @p[distance=..1] run effect give @p[distance=..1] levitation 10 1
+execute as @e[tag=ClonedShulkerBullet] at @s if entity @p[distance=..1] run kill @s
+
+execute as @e[type=ender_dragon] at @s run function gameify:enhanced_ender_dragon/enhanced_ender_dragon with entity @s
+execute as @e[tag=TrackingDragonFireball] at @s run function gameify:enhanced_ender_dragon/enhanced_dragon_fireball with entity @s
+
 
 
 execute as @e[scores={cooldown=1..}] at @s run scoreboard players remove @s cooldown 1
