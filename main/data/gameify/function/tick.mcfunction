@@ -94,6 +94,7 @@ execute as @e[tag=ClonedShulkerBullet] at @s if entity @p[distance=..1] run kill
 
 execute as @e[type=ender_dragon] at @s run function gameify:enhanced_ender_dragon/enhanced_ender_dragon with entity @s
 execute as @e[tag=TrackingDragonFireball] at @s run function gameify:enhanced_ender_dragon/enhanced_dragon_fireball with entity @s
+execute as @e[type=end_crystal] at @s run function gameify:enhanced_ender_dragon/enhanced_end_crystal with entity @s
 
 
 

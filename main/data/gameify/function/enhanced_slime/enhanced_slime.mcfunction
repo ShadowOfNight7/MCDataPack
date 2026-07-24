@@ -17,13 +17,15 @@ tag @s remove TargetCube
 execute as @s[type=slime,scores={random=5}] at @s unless entity @s[nbt={equipment:{mainhand:{id:"minecraft:slime_spawn_egg",count:1}},drop_chances:{mainhand:1f}}] run data merge entity @s {equipment:{mainhand:{id:"minecraft:slime_spawn_egg",count:1}},drop_chances:{mainhand:1f}}
 execute as @s[type=magma_cube,scores={random=5}] at @s unless entity @s[nbt={equipment:{mainhand:{id:"minecraft:magma_cube_spawn_egg",count:1}},drop_chances:{mainhand:1f}}] run data merge entity @s {equipment:{mainhand:{id:"minecraft:magma_cube_spawn_egg",count:1}},drop_chances:{mainhand:1f}}
 
-execute as @s[scores={time=1}] at @s run effect give @s jump_boost infinite 2 false
+execute as @s[scores={time=1}] at @s run effect give @s jump_boost infinite 2 true
+execute as @s[scores={time=1}] at @s run attribute @s follow_range base set 64
 
+execute as @s[scores={random=2}] at @s run effect give @s strength 1 0 true
 execute as @s[scores={random=3}] at @s run effect give @s strength 1 0 true
 execute as @s[scores={random=4}] at @s run effect give @s strength 1 1 true
 execute as @s[scores={random=5}] at @s run effect give @s strength 1 2 true
-execute as @s[scores={random=6}] at @s run effect give @s strength 1 3 true
-execute as @s[scores={random=7}] at @s run effect give @s strength 1 4 true
-execute as @s[scores={random=8}] at @s run effect give @s strength 1 5 true
-execute as @s[scores={random=9}] at @s run effect give @s strength 1 6 true
-execute as @s[scores={random=10..}] at @s run effect give @s strength 1 7 true
+execute as @s[scores={random=6}] at @s run effect give @s strength 1 2 true
+execute as @s[scores={random=7}] at @s run effect give @s strength 1 3 true
+execute as @s[scores={random=8}] at @s run effect give @s strength 1 4 true
+execute as @s[scores={random=9}] at @s run effect give @s strength 1 4 true
+execute as @s[scores={random=10..}] at @s run effect give @s strength 1 5 true
