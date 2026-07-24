@@ -97,7 +97,6 @@ execute as @e[tag=TrackingDragonFireball] at @s run function gameify:enhanced_en
 execute as @e[type=end_crystal] at @s run function gameify:enhanced_ender_dragon/enhanced_end_crystal with entity @s
 
 
-
 execute as @e[scores={cooldown=1..}] at @s run scoreboard players remove @s cooldown 1
 execute as @e[scores={cooldown2=1..}] at @s run scoreboard players remove @s cooldown2 1
 
